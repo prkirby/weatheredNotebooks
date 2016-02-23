@@ -1,1 +1,7 @@
 *.DS_Store
+
+/themes/.sass-cache
+
+*.gz
+*.zip
+*.tar
