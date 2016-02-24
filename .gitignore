@@ -1,7 +1,7 @@
+
+
 *.DS_Store
-
-/themes/.sass-cache
-
-*.gz
 *.zip
-*.tar
+*.gz
+!*.sql.gz
+*.scssc
