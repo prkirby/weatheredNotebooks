@@ -113,6 +113,19 @@ a {
   font-size: inherit;
 }
 
+/* line 29, ../sass/partials/_global.scss */
+.img-responsive {
+  max-width: 100%;
+}
+
+/* line 32, ../sass/partials/_global.scss */
+.link-btn {
+  text-decoration: none;
+  border: 10px solid;
+  border-radius: 10px;
+  padding: 25px 30px;
+}
+
 /* line 2, ../sass/partials/_menus.scss */
 .menu--main .menu {
   display: flex;
@@ -123,7 +136,52 @@ a {
   width: 100px;
 }
 
-/* line 12, ../sass/styles.scss */
-html {
+/* line 1, ../sass/partials/_front-page.scss */
+.header-title {
+  position: absolute;
+  width: 100%;
+  top: 80px;
+  text-align: center;
+}
+
+/* line 7, ../sass/partials/_front-page.scss */
+.kickstarter-btn {
+  position: absolute;
+  width: 100%;
+  top: 550px;
+  text-align: center;
+}
+/* line 12, ../sass/partials/_front-page.scss */
+.kickstarter-btn a {
+  display: inline-block;
+  color: white;
+  border-color: white;
+  font-size: 30px;
+  background-color: transparent;
+}
+
+/* line 20, ../sass/partials/_front-page.scss */
+#block-infoexcerpt1 {
+  display: flex;
+  justify-content: center;
+}
+/* line 23, ../sass/partials/_front-page.scss */
+#block-infoexcerpt1 .field--name-body {
+  width: 66%;
+}
+/* line 26, ../sass/partials/_front-page.scss */
+#block-infoexcerpt1 img {
   width: 200px;
+  height: auto;
+  margin: 40px;
+}
+
+/* line 34, ../sass/partials/_front-page.scss */
+.view-field-field-jssor-slider img {
+  width: 100%;
+}
+
+/* line 13, ../sass/styles.scss */
+html, body {
+  width: 100%;
 }

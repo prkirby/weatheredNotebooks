@@ -46,19 +46,16 @@
 <div class="layout-container">
 
   <header role="banner">
-    {{ page.header }}
+    <img class="img-responsive header-image" src="/themes/weathered_notebooks/front-page-assets/Header/IMG_0112.png">
+    <div class="header-title">
+        <h1>Weathered Notebooks</h1>
+    </div>
+    <div class="kickstarter-btn">
+        <a class="btn link-btn" href="#">Support on Kickstarter</a>
+    </div>
   </header>
-
-  {{ page.primary_menu }}
-
-
   <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-
-    <h1>This is test content</h1>
-
-
-
+    {{ page.content }}
   </main>
 
   {% if page.footer %}

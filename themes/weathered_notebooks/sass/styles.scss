@@ -7,8 +7,9 @@
 @import "partials/_variables.scss";
 @import "partials/_global.scss";
 @import "partials/_menus.scss";
+@import "partials/_front-page.scss";
 
 
-html {
-    width: 200px;
+html, body {
+    width: 100%;
 }

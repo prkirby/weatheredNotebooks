@@ -1,0 +1,36 @@
+.header-title {
+    position: absolute;
+    width:100%;
+    top: 80px;
+    text-align: center;
+}
+.kickstarter-btn {
+    position: absolute;
+    width: 100%;
+    top: 550px;
+    text-align: center;
+    a {
+        display: inline-block;
+        color: white;
+        border-color: white;
+        font-size: 30px;
+        background-color: transparent;
+    }
+}
+#block-infoexcerpt1 {
+    display: flex;
+    justify-content: center;
+    .field--name-body {
+        width: 66%;
+    }
+    img {
+        width: 200px;
+        height: auto;
+        margin: 40px;
+    }
+}
+
+//JSSOR Slider
+.view-field-field-jssor-slider img {
+    width: 100%;
+}
