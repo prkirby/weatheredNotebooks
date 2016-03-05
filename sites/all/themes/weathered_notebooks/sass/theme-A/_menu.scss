@@ -1,0 +1,24 @@
+#navigation {
+    left: 0;
+    padding: 0;
+}
+#main-menu {
+    padding: 20px 40px;
+    background-color: $gray;
+    ul {
+        display: flex;
+        justify-content: flex-end;;
+        li {
+            display: flex;
+            margin-left: 10px;
+            a {
+                color: white;
+                text-decoration: none;
+                font-size: 20px;
+                font-family: $helvetica;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+}

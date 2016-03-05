@@ -1,0 +1,16 @@
+/**
+* Collect all partials for theme A
+**/
+
+@import "variables.scss";
+
+@import "single-page.scss";
+@import "menu.scss";
+
+#page {
+    max-width: 100%;
+    background-color: $beige;
+    .column {
+        padding: 0;
+    }
+}
