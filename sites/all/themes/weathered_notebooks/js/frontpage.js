@@ -11,4 +11,5 @@ function shopResize() {
     row5img.css("bottom", "0");
 };
 
-jQuery(window).onload(shopResize());
+window.onload = function(){shopResize()};
+jQuery(window).resize(function(){shopResize()});

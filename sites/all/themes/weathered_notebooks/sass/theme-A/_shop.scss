@@ -1,14 +1,11 @@
 #shop {
-    display: block;
+    overflow: hidden;
     .view-content {
         width: 90%;
         display: block;
         margin: auto;
         margin-bottom: 40px;
-
         .views-row {
-            // width: 25%;
-            // padding: 0 20px;
             float: left;
             position: relative;
             display: block;
@@ -34,7 +31,6 @@
         .views-row-5 {
             width: 40%;
             clear: right;
-            margin-bottom: 20px;
         }
     }
 }

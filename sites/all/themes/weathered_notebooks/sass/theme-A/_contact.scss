@@ -1,0 +1,42 @@
+#webformcontact {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("/sites/all/themes/weathered_notebooks/bkg-images/Contact_Backdrop.jpg");
+    background-size: 100% auto;
+    background-clip: border-box;
+    background-position: center center;
+    color: white;
+    padding: 40px 60px;
+    margin: 60px 0;
+    h2 {
+        font-family: $didactGothic;
+        margin-top: 0;
+    }
+    .webform-client-form {
+        @include zen-grid-container;
+        $zen-column-count: 2 !global;
+
+        .webform-component--name {
+            @include zen-grid-item(1, 1);
+        }
+        .webform-component--email {
+            @include zen-grid-item(1, 2);
+            input {
+                float: right;
+            }
+        }
+        .webform-component--message {
+            @include zen-clear();
+            @include zen-grid-item(2, 1);
+        }
+        .form-actions {
+            @include zen-clear();
+            @include zen-grid-item(2, 1);
+            input {
+                float: right;
+            }
+        }
+    }
+}

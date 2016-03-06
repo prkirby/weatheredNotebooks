@@ -1988,7 +1988,7 @@ tr.selected td {
 
 /* line 1, ../sass/theme-A/_shop.scss */
 #shop {
-  display: block;
+  overflow: hidden;
 }
 /* line 3, ../sass/theme-A/_shop.scss */
 #shop .view-content {
@@ -1997,58 +1997,120 @@ tr.selected td {
   margin: auto;
   margin-bottom: 40px;
 }
-/* line 9, ../sass/theme-A/_shop.scss */
+/* line 8, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row {
   float: left;
   position: relative;
   display: block;
 }
-/* line 15, ../sass/theme-A/_shop.scss */
+/* line 12, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row .product-img {
   display: block;
   margin: 0 10px;
 }
-/* line 19, ../sass/theme-A/_shop.scss */
+/* line 16, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row .product-info {
   position: absolute;
   bottom: 0;
 }
-/* line 22, ../sass/theme-A/_shop.scss */
+/* line 19, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row .product-info div {
   display: block;
   margin: auto;
 }
-/* line 28, ../sass/theme-A/_shop.scss */
+/* line 25, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row-1, #shop .view-content .views-row-2 {
   width: 30%;
 }
-/* line 31, ../sass/theme-A/_shop.scss */
+/* line 28, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row-3, #shop .view-content .views-row-4 {
   width: 20%;
 }
-/* line 34, ../sass/theme-A/_shop.scss */
+/* line 31, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row-5 {
   width: 40%;
   clear: right;
-  margin-bottom: 20px;
 }
 
-/* line 16, ../sass/theme-A/_main.scss */
+/* line 1, ../sass/theme-A/_contact.scss */
+#webformcontact {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/sites/all/themes/weathered_notebooks/bkg-images/Contact_Backdrop.jpg");
+  background-size: 100% auto;
+  background-clip: border-box;
+  background-position: center center;
+  color: white;
+  padding: 40px 60px;
+  margin: 60px 0;
+}
+/* line 13, ../sass/theme-A/_contact.scss */
+#webformcontact h2 {
+  font-family: "Didact Gothic", sans-serif;
+  margin-top: 0;
+}
+/* line 45, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+#webformcontact .webform-client-form:before, #webformcontact .webform-client-form:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+#webformcontact .webform-client-form:after {
+  clear: both;
+}
+/* line 21, ../sass/theme-A/_contact.scss */
+#webformcontact .webform-client-form .webform-component--name {
+  float: left;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: -50%;
+}
+/* line 24, ../sass/theme-A/_contact.scss */
+#webformcontact .webform-client-form .webform-component--email {
+  float: left;
+  width: 50%;
+  margin-left: 50%;
+  margin-right: -100%;
+}
+/* line 26, ../sass/theme-A/_contact.scss */
+#webformcontact .webform-client-form .webform-component--email input {
+  float: right;
+}
+/* line 30, ../sass/theme-A/_contact.scss */
+#webformcontact .webform-client-form .webform-component--message {
+  clear: left;
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+}
+/* line 34, ../sass/theme-A/_contact.scss */
+#webformcontact .webform-client-form .form-actions {
+  clear: left;
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+}
+/* line 37, ../sass/theme-A/_contact.scss */
+#webformcontact .webform-client-form .form-actions input {
+  float: right;
+}
+
+/* line 17, ../sass/theme-A/_main.scss */
 body {
   background-color: #e1d7c3;
   padding: 0;
 }
 
-/* line 20, ../sass/theme-A/_main.scss */
+/* line 21, ../sass/theme-A/_main.scss */
 #page {
   max-width: 100%;
 }
-/* line 22, ../sass/theme-A/_main.scss */
+/* line 23, ../sass/theme-A/_main.scss */
 #page .column {
   padding: 0;
 }
 
-/* line 26, ../sass/theme-A/_main.scss */
+/* line 27, ../sass/theme-A/_main.scss */
 #main {
   padding: 0;
 }
