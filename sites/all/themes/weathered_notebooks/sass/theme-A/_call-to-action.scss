@@ -1,7 +1,39 @@
 #articlecallaction {
+    position: relative;
     img {
         width: 100vw;
         height: 755px;
+    }
+    .quality-slogan {
+        position: absolute;
+        left: 5%;
+        top: 0;
+        font-family: $font-monospace;
+        font-size: 2em;
+        h1 {
+            font-family: $didactGothic;
+            font-size: 2em;
+            margin: 15px 0;
+        }
+    }
+    .call-to-action-btn {
+        position: absolute;
+        right: 28%;
+        top: 51%;
+        a {
+
+            font-size: 2.5em;
+            font-family: $font-monospace;
+            font-weight: bold;
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+            border: 7px solid white;
+            border-radius: 10px;
+        }
+        a:hover {
+
+        }
     }
 
 }

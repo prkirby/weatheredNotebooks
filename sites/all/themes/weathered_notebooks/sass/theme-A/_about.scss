@@ -1,0 +1,38 @@
+#articleaboutus {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("/sites/all/themes/weathered_notebooks/bkg-images/About_Backdrop.jpg");
+    background-size: 100% auto;
+    background-clip: border-box;
+    background-position: center center;
+    color: white;
+    .about-us-content {
+        @include zen-grid-container();
+        .about-us-text {
+            @include zen-grid-item(3, 1);
+            h2 {
+                margin: 0;
+                margin-left: 60px;
+                padding-top: 20px;
+                font-weight: lighter;
+                font-size: 2em;
+            }
+            p {
+                margin-left: 60px;
+            }
+        }
+        .about-us-img {
+            @include zen-grid-item(2, 4);
+            img {
+                display: block;
+                width: 280px;
+                padding: 40px;
+                margin: auto;
+            }
+        }
+
+    }
+
+}
