@@ -1881,6 +1881,10 @@ tr.selected td {
   background-position: center center;
   color: white;
 }
+/* line 11, ../sass/theme-A/_about.scss */
+#articleaboutus .about-us-content {
+  padding: 40px 0;
+}
 /* line 45, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
 #articleaboutus .about-us-content:before, #articleaboutus .about-us-content:after {
   content: "";
@@ -1890,33 +1894,34 @@ tr.selected td {
 #articleaboutus .about-us-content:after {
   clear: both;
 }
-/* line 13, ../sass/theme-A/_about.scss */
+/* line 14, ../sass/theme-A/_about.scss */
 #articleaboutus .about-us-content .about-us-text {
   float: left;
   width: 60%;
   margin-left: 0%;
   margin-right: -60%;
 }
-/* line 15, ../sass/theme-A/_about.scss */
+/* line 16, ../sass/theme-A/_about.scss */
 #articleaboutus .about-us-content .about-us-text h2 {
   margin: 0;
   margin-left: 60px;
   padding-top: 20px;
   font-weight: lighter;
   font-size: 2em;
+  font-family: "Didact Gothic", sans-serif;
 }
-/* line 22, ../sass/theme-A/_about.scss */
+/* line 24, ../sass/theme-A/_about.scss */
 #articleaboutus .about-us-content .about-us-text p {
   margin-left: 60px;
 }
-/* line 26, ../sass/theme-A/_about.scss */
+/* line 28, ../sass/theme-A/_about.scss */
 #articleaboutus .about-us-content .about-us-img {
   float: left;
   width: 40%;
   margin-left: 60%;
   margin-right: -100%;
 }
-/* line 28, ../sass/theme-A/_about.scss */
+/* line 30, ../sass/theme-A/_about.scss */
 #articleaboutus .about-us-content .about-us-img img {
   display: block;
   width: 280px;
@@ -1938,23 +1943,63 @@ tr.selected td {
   background-position: center center;
   color: white;
 }
+/* line 12, ../sass/theme-A/_subscribe.scss */
+#webformsubscribe .single-page {
+  padding: 40px 0;
+}
+/* line 45, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+#webformsubscribe .single-page .node-20:before, #webformsubscribe .single-page .node-20:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+#webformsubscribe .single-page .node-20:after {
+  clear: both;
+}
+/* line 17, ../sass/theme-A/_subscribe.scss */
+#webformsubscribe .single-page .node-20 .field {
+  float: left;
+  width: 60%;
+  margin-left: 0%;
+  margin-right: -60%;
+}
+/* line 19, ../sass/theme-A/_subscribe.scss */
+#webformsubscribe .single-page .node-20 .field .field-item {
+  margin-left: 60px;
+}
+/* line 21, ../sass/theme-A/_subscribe.scss */
+#webformsubscribe .single-page .node-20 .field .field-item h2 {
+  font-family: "Didact Gothic", sans-serif;
+}
+/* line 26, ../sass/theme-A/_subscribe.scss */
+#webformsubscribe .single-page .node-20 .webform-client-form {
+  float: left;
+  width: 40%;
+  margin-left: 60%;
+  margin-right: -100%;
+}
 
-/* line 14, ../sass/theme-A/_main.scss */
+/* line 2, ../sass/theme-A/_flex-slider.scss */
+#gallery .flexslider {
+  margin: 60px 100px;
+}
+
+/* line 15, ../sass/theme-A/_main.scss */
 body {
   background-color: #e1d7c3;
   padding: 0;
 }
 
-/* line 18, ../sass/theme-A/_main.scss */
+/* line 19, ../sass/theme-A/_main.scss */
 #page {
   max-width: 100%;
 }
-/* line 20, ../sass/theme-A/_main.scss */
+/* line 21, ../sass/theme-A/_main.scss */
 #page .column {
   padding: 0;
 }
 
-/* line 24, ../sass/theme-A/_main.scss */
+/* line 25, ../sass/theme-A/_main.scss */
 #main {
   padding: 0;
 }

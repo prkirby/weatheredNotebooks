@@ -10,6 +10,7 @@
     color: white;
     .about-us-content {
         @include zen-grid-container();
+        padding: 40px 0;
         .about-us-text {
             @include zen-grid-item(3, 1);
             h2 {
@@ -18,6 +19,7 @@
                 padding-top: 20px;
                 font-weight: lighter;
                 font-size: 2em;
+                font-family: $didactGothic;
             }
             p {
                 margin-left: 60px;

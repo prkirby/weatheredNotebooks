@@ -8,4 +8,24 @@
     background-clip: border-box;
     background-position: center center;
     color: white;
+
+    .single-page {
+        padding: 40px 0;
+
+        .node-20 {
+            @include zen-grid-container();
+            .field {
+                @include zen-grid-item(3, 1);
+                .field-item {
+                    margin-left: 60px;
+                    h2 {
+                        font-family: $didactGothic;
+                    }
+                }
+            }
+            .webform-client-form {
+                @include zen-grid-item(2, 4);
+            }
+        }
+    }
 }
