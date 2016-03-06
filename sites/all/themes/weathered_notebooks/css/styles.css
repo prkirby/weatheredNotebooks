@@ -2232,4 +2232,9 @@ body {
   margin-top: 48px;
 }
 
+/* line 37, ../sass/theme-A/_main.scss */
+#content.not-front {
+  padding: 20px 60px;
+}
+
 /* @import "theme-B"; */

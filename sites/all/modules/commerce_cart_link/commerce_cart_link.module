@@ -1,0 +1,305 @@
+<?php
+
+function commerce_cart_link_menu() {
+  $items = array();
+  $items['cart/%/%ctools_js/%/%'] = array(
+    'title' => 'Add or Remove a Cart Product',
+    'page callback' => 'commerce_cart_link_action',
+    'page arguments' => array(1, 2, 3, 4),
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+
+/**
+ * Callback. Adds a product to a cart by product id
+ */
+function commerce_cart_link_action($action = FALSE, $js = FALSE, $product_id = FALSE, $token = FALSE) {
+  global $user;
+
+  // Back off if nothing is given.
+  if (empty($action) || empty($token))
+    drupal_access_denied();
+
+  // Validate the token if we received one. Skips anonymous.
+  if (!drupal_valid_token(check_plain($token), 'add_to_cart_link:' . $product_id, TRUE))
+    drupal_access_denied();
+
+  $action = check_plain($action);
+  $product_id = check_plain($product_id);
+
+  switch ($action) {
+    case 'add':
+      // Add the product to the cart.
+      if ($product = commerce_product_load($product_id)) {
+        $line_item = commerce_product_line_item_new($product);
+        // $line_item->data['context']['display_path'] =... @todo: Add a correct display path.
+        $line_item->data['context']['product_ids'] = $product_id;
+
+        $added = commerce_cart_product_add($user->uid, $line_item, TRUE);
+
+        // Upon success, $added will be an object. FALSE otherwise
+        if (!empty($added)) {
+          if ($js) {
+            ctools_include('ajax');
+            $commands = array();
+            $commands[] = ajax_command_replace('.add-' . $product_id, 'Added to ' . l('your cart', 'cart'));
+
+            // DC Ajax Add Cart integration.
+            if (module_exists('dc_ajax_add_cart') && !empty($line_item)) {
+              drupal_add_js(drupal_get_path('module', 'dc_ajax_add_cart') . '/js/dc_ajax_add_cart.js');
+              drupal_add_css(drupal_get_path('module', 'dc_ajax_add_cart') . '/css/dc_ajax_add_cart.css');
+              $commands = _commerce_cart_link_dc_ajax_cart_commands($commands, $line_item, $product_id);
+            }
+
+            print ajax_render($commands);
+          }
+          else {
+            drupal_goto('cart');
+          }
+        }
+      }
+      break;
+
+    case 'remove':
+      // Find the line_item_id for this product
+      $order = commerce_cart_order_load($user->uid);
+      $deleted = FALSE;
+
+      if (!empty($order)) {
+        $order_wrapper = entity_metadata_wrapper('commerce_order', $order);
+
+        foreach ($order_wrapper->commerce_line_items->value() as $line_item) {
+          $line_item_wrapper = entity_metadata_wrapper('commerce_line_item', $line_item->line_item_id);
+          $product_wrapper = $line_item_wrapper->commerce_product->value();
+
+          if ($product_wrapper->product_id == $product_id) {
+            $deleted = TRUE;
+            commerce_line_item_delete($line_item->line_item_id);
+          }
+        }
+      }
+
+      if ($deleted == TRUE) {
+        if ($js) {
+          ctools_include('ajax');
+          $commands = array();
+          $commands[] = ajax_command_replace('.remove-' . $product_id, 'Removed from '.l('cart', 'Cart'));
+          print ajax_render($commands);
+        }
+        else {
+          drupal_goto('cart');
+        }
+      }
+      break;
+
+    default:
+      break;
+
+  }
+}
+
+/**
+ * Implements hook_field_formatter_info().
+ */
+function commerce_cart_link_field_formatter_info() {
+  return array(
+    'commerce_cart_link' => array(
+      'label' => t('Commerce Cart Link'),
+      'description' => t('An ajaxified link that triggers an add-to-cart or removal function.'),
+      'field types' => array('commerce_product_reference', 'entityreference'),
+    ),
+  );
+}
+
+/**
+ * Implement hook_field_formatter_view().
+ *
+ * Formats a product reference or entityfield with products attached
+ *  as a CTools-based Ajax Cart Link.
+ */
+function commerce_cart_link_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
+
+  switch ($display['type']) {
+
+    // Create an "add to cart" link for a referenced product.
+    case 'commerce_cart_link':
+
+      ctools_include('ajax');
+
+      $result = array();
+      $product_ids = array();
+
+      foreach ($items as $delta => $item) {
+        $product_ids[$item['product_id']] = $item['product_id'];
+      }
+
+      // Exit now if we didn't find any product IDs.
+      if (empty($product_ids)) {
+        return FALSE;
+      }
+
+      $products = commerce_product_load_multiple($product_ids);
+
+      foreach ($items as $delta => $item) {
+        $product_id = $items[$delta]['product_id'];
+        $token = drupal_get_token('add_to_cart_link:' . $product_id);
+        $product_wrapper = entity_metadata_wrapper('commerce_product', $products[$product_id]);
+        $in_cart = _commerce_cart_link_product_in_cart($product_id);
+
+        // @todo: Add nofollow class
+        // @todo: Move link creation to a theme hook with altered $vars array
+
+        // Set default variables for link creation
+        $vars = array(
+          'in_cart' => $in_cart,
+          'product' => $product_wrapper,
+          'token' => $token,
+        );
+
+        if ($in_cart) {
+          $vars += array(
+            'class' => 'commerce-remove-cart-link',
+            'label' => t('Remove from Cart'),
+          );
+
+          // Allow other modules to alter the link data before the link is created
+          drupal_alter('commerce_cart_link', $vars);
+
+          $link = ctools_ajax_text_button($vars['label'], 'cart/remove/nojs/' . $product_id.'/' . $token, $vars['label'],
+            'ajax-remove-cart '.$vars['class'].' remove-' . $product_id);
+        }
+        else {
+          $info = entity_get_info('commerce_product');
+          $bundle = $product_wrapper->getBundle();
+          $type =  $info['bundles'][$bundle]['label'];
+          $price = $product_wrapper->commerce_price->value();
+          $price = commerce_currency_format($price['amount'], $price['currency_code']);
+
+          $vars += array(
+            'class' => 'commerce-add-to-cart-link',
+            'label' => t('@type @price', array('@type' => $type, '@price' => $price)),
+          );
+
+          // Allow other modules to alter the link data before the link is created
+          drupal_alter('commerce_cart_link', $vars);
+
+          $link = ctools_ajax_text_button($vars['label'],
+            'cart/add/nojs/' . $product_id . '/' . $token,
+            t('Buy :title', array(':title' => $product_wrapper->title->value())), $vars['class'] . ' ajax-add-cart add-' . $product_id);
+
+        }
+
+        $result[$delta] = array(
+          '#type' => 'markup',
+          '#markup' => $link,
+        );
+      }
+    }
+
+    if (isset($result) && !empty($result)) {
+      return $result;
+    }
+}
+
+
+/**
+ * DC Ajax Add Cart integration
+ */
+function _commerce_cart_link_dc_ajax_cart_commands($commands, $line_item, $product_id) {
+  $form_errors = form_get_errors();
+
+  if (!empty($form_errors)) {
+    $commands = array();
+    // Show Drupal status message without page refresh.
+    // @see https://www.drupal.org/node/1271004#comment-7205478
+    $commands[] = ajax_command_remove('div.messages');
+    $commands[] = ajax_command_before('#main-content', theme('status_messages'));
+
+    return array(
+      '#type' => 'ajax',
+      '#commands' => $commands,
+    );
+  }
+
+  // Get the current status of commerce cart.
+  $commerce_cart = dc_ajax_add_cart_get_commerce_cart_details();
+
+  // If the user has ordered items.
+  if ($commerce_cart['order']) {
+    // Get the line items in cart with their quantity and total.
+    $line_items = $commerce_cart['wrapper']->commerce_line_items;
+    $quantity = commerce_line_items_quantity($line_items, commerce_product_line_item_types());
+    $total = commerce_line_items_total($line_items);
+
+    $ajax_shopping_cart_content = theme('dc_ajax_shopping_cart', array(
+      'order' => $commerce_cart['order'],
+      'line_items' => $line_items,
+      'quantity' => $quantity,
+      'total' => $total,
+    ));
+    $commands[] = ajax_command_replace('div.ajax-shopping-cart-wrapper', $ajax_shopping_cart_content);
+
+    // Update the contents of shopping cart.
+    $ajax_shopping_cart_teaser_content = theme('dc_ajax_shopping_cart_teaser', array(
+      'order' => $commerce_cart['order'],
+      'quantity' => $quantity,
+      'total' => $total,
+    ));
+    $commands[] = ajax_command_replace('div.ajax-shopping-cart-teaser', $ajax_shopping_cart_teaser_content);
+
+    // Display add to cart message.
+    if (variable_get(DC_AJAX_ADD_CART_DISPLAY_POPUP, 'display_popup_message') == 'display_popup_message') {
+      // Gather information to display product information in popup message.
+      $last_line_item_product = commerce_product_load($product_id);
+      $last_line_item_quantity = 1;
+
+      $content = theme('dc_ajax_add_to_cart_message', array(
+        'line_item' => $line_item,
+        'product' => $last_line_item_product,
+        'quantity' => $last_line_item_quantity,
+      ));
+      $commands[] = ajax_command_prepend('body', $content);
+    }
+
+    // Clear status messages if any.
+    $commands[] = ajax_command_remove('div.messages');
+
+    return $commands;
+  }
+}
+
+/**
+ * Utility function to quickly check if a product is in the current user's cart
+ *  based on the product_id.
+ *
+ * @param $product_id
+ * @return bool
+ *  TRUE or FALSE depending on if the product_id is found in the order.
+ */
+function _commerce_cart_link_product_in_cart($product_id) {
+  global $user;
+  $cart_product_ids = &drupal_static(__FUNCTION__);
+
+  if (!$cart_product_ids) {
+    $order = commerce_cart_order_load($user->uid);
+
+    if (empty($order->commerce_line_items)) {
+      return FALSE;
+    }
+    else {
+      $order_wrapper = entity_metadata_wrapper('commerce_order', $order);
+      foreach ($order_wrapper->commerce_line_items as $delta => $line_item_wrapper) {
+        if (!empty($line_item_wrapper->commerce_product)) {
+          $product_wrapper = $line_item_wrapper->commerce_product;
+          $id = $product_wrapper->product_id->value();
+          $cart_product_ids[] = $id;
+        }
+      }
+    }
+  }
+
+  return in_array($product_id, $cart_product_ids);
+}

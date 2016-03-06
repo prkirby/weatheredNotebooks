@@ -1,0 +1,16 @@
+name = "Commerce Cart Link"
+description = "Format a product reference field as an ajaxified Add to Cart Link"
+package = "Commerce (contrib)"
+core = 7.x
+hidden = FALSE
+dependencies[] = commerce_cart
+dependencies[] = ctools
+
+files[] = views/handlers/commerce_cart_link_cart_handler_add_to_cart_link.inc
+
+; Information added by Drupal.org packaging script on 2015-10-18
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "commerce_cart_link"
+datestamp = "1445207042"
+
