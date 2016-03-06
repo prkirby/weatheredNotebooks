@@ -1,3 +1,18 @@
+jQuery(document).ready(function(){
+	jQuery('a[href^="#"]').bind('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = jQuery(target);
+
+	    jQuery('html, body').stop().animate({
+	        'scrollTop': $target.offset().top - jQuery("#main-menu").outerHeight(true)
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+
 //* Dynamically set heights of products
 function shopResize() {
     var height = jQuery("#shop .views-row-1").outerHeight(true);

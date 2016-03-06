@@ -4,4 +4,12 @@
         width: 90%;
         margin: 60px auto;
     }
+    .flex-control-nav {
+        bottom: 15px;
+        z-index: 2000;
+        .flex-active {
+            background: rgba(255, 255, 255, 0.8);
+        }
+    }
+    clear: both;
 }

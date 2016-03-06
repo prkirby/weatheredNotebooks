@@ -1809,27 +1809,47 @@ tr.selected td {
 
 /* line 1, ../sass/theme-A/_menu.scss */
 #main-menu {
-  background-color: #898989;
+  background-color: #555555;
+  z-index: 601;
 }
-/* line 3, ../sass/theme-A/_menu.scss */
+/* line 5, ../sass/theme-A/_menu.scss */
 #main-menu ul {
   margin: 0;
   padding: 12px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
   justify-content: flex-end;
 }
-/* line 8, ../sass/theme-A/_menu.scss */
+/* line 10, ../sass/theme-A/_menu.scss */
 #main-menu ul li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex;
-  margin-left: 10px;
+  margin-left: 15px;
 }
-/* line 11, ../sass/theme-A/_menu.scss */
+/* line 13, ../sass/theme-A/_menu.scss */
 #main-menu ul li a {
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
   text-transform: uppercase;
   font-family: "Didact Gothic", sans-serif;
+}
+
+/* line 23, ../sass/theme-A/_menu.scss */
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 /* line 1, ../sass/theme-A/_call-to-action.scss */
@@ -1979,11 +1999,24 @@ tr.selected td {
   margin-right: -100%;
 }
 
+/* line 1, ../sass/theme-A/_flex-slider.scss */
+#gallery {
+  clear: both;
+}
 /* line 2, ../sass/theme-A/_flex-slider.scss */
 #gallery .flexslider {
   display: block;
   width: 90%;
   margin: 60px auto;
+}
+/* line 7, ../sass/theme-A/_flex-slider.scss */
+#gallery .flex-control-nav {
+  bottom: 15px;
+  z-index: 2000;
+}
+/* line 10, ../sass/theme-A/_flex-slider.scss */
+#gallery .flex-control-nav .flex-active {
+  background: rgba(255, 255, 255, 0.8);
 }
 
 /* line 1, ../sass/theme-A/_shop.scss */
@@ -2095,6 +2128,42 @@ tr.selected td {
   float: right;
 }
 
+/* line 2, ../sass/theme-A/_cart.scss */
+#shoppingcart .single-page {
+  margin: 0 60px;
+  margin-bottom: 40px;
+}
+/* line 6, ../sass/theme-A/_cart.scss */
+#shoppingcart .single-page-title {
+  display: block;
+}
+/* line 9, ../sass/theme-A/_cart.scss */
+#shoppingcart .view-shopping-cart {
+  margin-left: 40px;
+  font-size: 18px;
+}
+/* line 12, ../sass/theme-A/_cart.scss */
+#shoppingcart .view-shopping-cart ul {
+  display: block;
+  margin-top: 20px;
+}
+/* line 15, ../sass/theme-A/_cart.scss */
+#shoppingcart .view-shopping-cart ul a {
+  color: #555555;
+  background-color: white;
+  text-decoration: none;
+  font-size: 20px;
+  border: 5px solid #555555;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+/* line 24, ../sass/theme-A/_cart.scss */
+#shoppingcart .view-shopping-cart ul a:hover {
+  color: #898989;
+  background-color: rbga(255, 255, 255, 0.2);
+  border-color: #898989;
+}
+
 /* line 1, ../sass/theme-A/_footer.scss */
 #footer {
   padding: 0;
@@ -2138,24 +2207,29 @@ tr.selected td {
   margin: 20px;
 }
 
-/* line 19, ../sass/theme-A/_main.scss */
+/* line 21, ../sass/theme-A/_main.scss */
 body {
   background-color: #e1d7c3;
   padding: 0;
 }
 
-/* line 23, ../sass/theme-A/_main.scss */
+/* line 25, ../sass/theme-A/_main.scss */
 #page {
   max-width: 100%;
 }
-/* line 25, ../sass/theme-A/_main.scss */
+/* line 27, ../sass/theme-A/_main.scss */
 #page .column {
   padding: 0;
 }
 
-/* line 29, ../sass/theme-A/_main.scss */
+/* line 31, ../sass/theme-A/_main.scss */
 #main {
   padding: 0;
+}
+
+/* line 34, ../sass/theme-A/_main.scss */
+.menu-margin-needed {
+  margin-top: 48px;
 }
 
 /* @import "theme-B"; */

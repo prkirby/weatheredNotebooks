@@ -44,9 +44,12 @@
           if (y > top) {
             // If so, ad the fixed class.
             $(Drupal.settings.singlePage.menuClass).addClass('fixed');
+            // Add margin class to #main-menu
+            $("#main").addClass('menu-margin-needed');
           } else {
             // Otherwise remove it.
             $(Drupal.settings.singlePage.menuClass).removeClass('fixed');
+            $("#main").removeClass('menu-margin-needed');
           }
         });
       }

@@ -4,6 +4,8 @@
 
 @import "variables.scss";
 
+@import "flexbox.scss";
+
 @import "single-page.scss";
 @import "menu.scss";
 @import "call-to-action.scss";
@@ -13,7 +15,7 @@
 @import "flex-slider.scss";
 @import "shop.scss";
 @import "contact.scss";
-
+@import "cart.scss";
 @import "footer.scss";
 
 body {
@@ -28,4 +30,7 @@ body {
 }
 #main {
     padding: 0;
+}
+.menu-margin-needed {
+    margin-top: 48px;
 }
