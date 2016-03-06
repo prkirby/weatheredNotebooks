@@ -111,7 +111,7 @@ audio:not([controls]) {
  */
 /* line 106, ../sass/_normalize.scss */
 html {
-  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   /* 1 */
   font-size: 100%;
   /* 3 */
@@ -1797,58 +1797,69 @@ tr.selected td {
 * Collect all partials for theme A
 **/
 /* Colors */
-/* line 1, ../sass/theme-A/single-page.scss */
+/* line 1, ../sass/theme-A/_single-page.scss */
 .single-page-title {
   display: none;
 }
 
-/* line 4, ../sass/theme-A/single-page.scss */
+/* line 4, ../sass/theme-A/_single-page.scss */
 .single-page-wrapper {
-  margin: 40px 0;
+  margin-bottom: 40px;
 }
 
-/* line 7, ../sass/theme-A/single-page.scss */
+/* line 7, ../sass/theme-A/_single-page.scss */
 #webformsubscribe {
   background-color: #898989;
 }
 
 /* line 1, ../sass/theme-A/_menu.scss */
-#navigation {
-  left: 0;
-  padding: 0;
-}
-
-/* line 5, ../sass/theme-A/_menu.scss */
 #main-menu {
-  padding: 20px 40px;
   background-color: #898989;
 }
-/* line 8, ../sass/theme-A/_menu.scss */
+/* line 3, ../sass/theme-A/_menu.scss */
 #main-menu ul {
+  margin: 0;
+  padding: 12px 0;
   display: flex;
   justify-content: flex-end;
 }
-/* line 11, ../sass/theme-A/_menu.scss */
+/* line 8, ../sass/theme-A/_menu.scss */
 #main-menu ul li {
   display: flex;
   margin-left: 10px;
 }
-/* line 14, ../sass/theme-A/_menu.scss */
+/* line 11, ../sass/theme-A/_menu.scss */
 #main-menu ul li a {
   color: white;
   text-decoration: none;
   font-size: 20px;
-  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
   text-transform: uppercase;
+  font-family: "Didact Gothic", sans-serif;
 }
 
-/* line 10, ../sass/theme-A/_main.scss */
+/* line 2, ../sass/theme-A/_call-to-action.scss */
+#articlecallaction img {
+  width: 100vw;
+  height: 755px;
+}
+
+/* line 11, ../sass/theme-A/_main.scss */
+body {
+  background-color: #e1d7c3;
+  padding: 0;
+}
+
+/* line 15, ../sass/theme-A/_main.scss */
 #page {
   max-width: 100%;
-  background-color: #e1d7c3;
 }
-/* line 13, ../sass/theme-A/_main.scss */
+/* line 17, ../sass/theme-A/_main.scss */
 #page .column {
+  padding: 0;
+}
+
+/* line 21, ../sass/theme-A/_main.scss */
+#main {
   padding: 0;
 }
 

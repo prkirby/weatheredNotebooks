@@ -6,11 +6,18 @@
 
 @import "single-page.scss";
 @import "menu.scss";
+@import "call-to-action.scss";
 
+body {
+    background-color: $beige;
+    padding: 0;
+}
 #page {
     max-width: 100%;
-    background-color: $beige;
     .column {
         padding: 0;
     }
+}
+#main {
+    padding: 0;
 }

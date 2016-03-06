@@ -16,8 +16,6 @@
 
   </header>
 
-  <div id="navigation">
-
     <?php if ($main_menu): ?>
       <nav id="main-menu" role="navigation" tabindex="-1">
         <?php
@@ -39,10 +37,6 @@
       </nav>
     <?php endif; ?>
 
-    <?php print render($page['navigation']); ?>
-
-  </div>
-  
   <div id="main">
 
     <div id="content" class="column" role="main">
