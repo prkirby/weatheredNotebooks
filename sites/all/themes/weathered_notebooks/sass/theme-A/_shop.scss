@@ -1,0 +1,40 @@
+#shop {
+    display: block;
+    .view-content {
+        width: 90%;
+        display: block;
+        margin: auto;
+        margin-bottom: 40px;
+
+        .views-row {
+            // width: 25%;
+            // padding: 0 20px;
+            float: left;
+            position: relative;
+            display: block;
+            .product-img {
+                display: block;
+                margin: 0 10px;
+            }
+            .product-info {
+                position: absolute;
+                bottom: 0;
+                div {
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+        .views-row-1, .views-row-2{
+            width: 30%;
+        }
+        .views-row-3, .views-row-4{
+            width: 20%
+        }
+        .views-row-5 {
+            width: 40%;
+            clear: right;
+            margin-bottom: 20px;
+        }
+    }
+}

@@ -1981,25 +1981,74 @@ tr.selected td {
 
 /* line 2, ../sass/theme-A/_flex-slider.scss */
 #gallery .flexslider {
-  margin: 60px 100px;
+  display: block;
+  width: 90%;
+  margin: 60px auto;
 }
 
-/* line 15, ../sass/theme-A/_main.scss */
+/* line 1, ../sass/theme-A/_shop.scss */
+#shop {
+  display: block;
+}
+/* line 3, ../sass/theme-A/_shop.scss */
+#shop .view-content {
+  width: 90%;
+  display: block;
+  margin: auto;
+  margin-bottom: 40px;
+}
+/* line 9, ../sass/theme-A/_shop.scss */
+#shop .view-content .views-row {
+  float: left;
+  position: relative;
+  display: block;
+}
+/* line 15, ../sass/theme-A/_shop.scss */
+#shop .view-content .views-row .product-img {
+  display: block;
+  margin: 0 10px;
+}
+/* line 19, ../sass/theme-A/_shop.scss */
+#shop .view-content .views-row .product-info {
+  position: absolute;
+  bottom: 0;
+}
+/* line 22, ../sass/theme-A/_shop.scss */
+#shop .view-content .views-row .product-info div {
+  display: block;
+  margin: auto;
+}
+/* line 28, ../sass/theme-A/_shop.scss */
+#shop .view-content .views-row-1, #shop .view-content .views-row-2 {
+  width: 30%;
+}
+/* line 31, ../sass/theme-A/_shop.scss */
+#shop .view-content .views-row-3, #shop .view-content .views-row-4 {
+  width: 20%;
+}
+/* line 34, ../sass/theme-A/_shop.scss */
+#shop .view-content .views-row-5 {
+  width: 40%;
+  clear: right;
+  margin-bottom: 20px;
+}
+
+/* line 16, ../sass/theme-A/_main.scss */
 body {
   background-color: #e1d7c3;
   padding: 0;
 }
 
-/* line 19, ../sass/theme-A/_main.scss */
+/* line 20, ../sass/theme-A/_main.scss */
 #page {
   max-width: 100%;
 }
-/* line 21, ../sass/theme-A/_main.scss */
+/* line 22, ../sass/theme-A/_main.scss */
 #page .column {
   padding: 0;
 }
 
-/* line 25, ../sass/theme-A/_main.scss */
+/* line 26, ../sass/theme-A/_main.scss */
 #main {
   padding: 0;
 }

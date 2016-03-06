@@ -7,7 +7,12 @@
  * @see https://drupal.org/node/1728148
  */
 ?>
-
+<?php
+    drupal_add_js(
+        drupal_get_path('theme', 'weathered_notebooks') . '/js/frontpage.js',
+        array('scope' => 'footer')
+    );
+?>
 <div id="page">
 
   <header class="header" id="header" role="banner">
