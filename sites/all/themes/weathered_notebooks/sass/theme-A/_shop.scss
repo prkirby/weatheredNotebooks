@@ -1,9 +1,8 @@
 #shop {
     overflow: hidden;
     .view-content {
-        width: 90%;
-        display: block;
-        margin: auto;
+        margin: 0 60px;
+        overflow: hidden;
         margin-bottom: 40px;
         .views-row {
             float: left;
@@ -12,8 +11,12 @@
             .product-img {
                 display: block;
                 margin: 0 10px;
+                img {
+                    display: block;
+                }
             }
             .product-info {
+                display: none;
                 position: absolute;
                 bottom: 0;
                 div {
@@ -31,6 +34,9 @@
         .views-row-5 {
             width: 40%;
             clear: right;
+            .product-img {
+                display: block;
+            }
         }
     }
 }
