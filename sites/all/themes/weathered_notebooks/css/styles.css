@@ -1844,10 +1844,6 @@ tr.selected td {
   text-transform: uppercase;
   font-family: "Didact Gothic", sans-serif;
 }
-/* line 19, ../sass/theme-A/_menu.scss */
-#main-menu ul li a.active {
-  color: #898989;
-}
 
 /* line 26, ../sass/theme-A/_menu.scss */
 .fixed {
@@ -1955,9 +1951,26 @@ tr.selected td {
 }
 
 /* line 2, ../sass/theme-A/_video.scss */
-#videomainvideo iframe {
-  display: block;
-  margin: 50px auto;
+#videomainvideo .field-item {
+  padding: 60px 10%;
+}
+/* line 5, ../sass/theme-A/_video.scss */
+#videomainvideo .embedded-video .player {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+/* line 13, ../sass/theme-A/_video.scss */
+#videomainvideo .embedded-video .player iframe,
+#videomainvideo .embedded-video .player object,
+#videomainvideo .embedded-video .player embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* line 1, ../sass/theme-A/_subscribe.scss */
