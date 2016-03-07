@@ -48,6 +48,9 @@ input, textarea {
 }
 input.webform-submit {
     background-color: $transWhite;
+    &:hover {
+        background-color: $semiTransWhite;
+    }
 }
 a {
     outline: none;

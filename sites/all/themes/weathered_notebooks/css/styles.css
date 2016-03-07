@@ -1844,8 +1844,12 @@ tr.selected td {
   text-transform: uppercase;
   font-family: "Didact Gothic", sans-serif;
 }
+/* line 19, ../sass/theme-A/_menu.scss */
+#main-menu ul li a.active {
+  color: #898989;
+}
 
-/* line 23, ../sass/theme-A/_menu.scss */
+/* line 26, ../sass/theme-A/_menu.scss */
 .fixed {
   position: fixed;
   width: 100%;
@@ -1987,13 +1991,18 @@ tr.selected td {
 /* line 21, ../sass/theme-A/_subscribe.scss */
 #webformsubscribe .single-page .node-20 .field .field-item h2 {
   font-family: "Didact Gothic", sans-serif;
+  font-size: 2.5em;
 }
-/* line 26, ../sass/theme-A/_subscribe.scss */
+/* line 27, ../sass/theme-A/_subscribe.scss */
 #webformsubscribe .single-page .node-20 .webform-client-form {
   float: left;
   width: 40%;
   margin-left: 60%;
   margin-right: -100%;
+}
+/* line 32, ../sass/theme-A/_subscribe.scss */
+#webformsubscribe .webform-submit {
+  width: 100%;
 }
 
 /* line 1, ../sass/theme-A/_flex-slider.scss */
@@ -2044,29 +2053,28 @@ tr.selected td {
 }
 /* line 18, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row .product-info {
-  display: none;
   position: absolute;
   bottom: 0;
 }
-/* line 22, ../sass/theme-A/_shop.scss */
+/* line 21, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row .product-info div {
   display: block;
   margin: auto;
 }
-/* line 28, ../sass/theme-A/_shop.scss */
+/* line 27, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row-1, #shop .view-content .views-row-2 {
   width: 30%;
 }
-/* line 31, ../sass/theme-A/_shop.scss */
+/* line 30, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row-3, #shop .view-content .views-row-4 {
   width: 20%;
 }
-/* line 34, ../sass/theme-A/_shop.scss */
+/* line 33, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row-5 {
   width: 40%;
   clear: right;
 }
-/* line 37, ../sass/theme-A/_shop.scss */
+/* line 36, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row-5 .product-img {
   display: block;
 }
@@ -2084,7 +2092,9 @@ tr.selected td {
 /* line 13, ../sass/theme-A/_contact.scss */
 #webformcontact h2 {
   font-family: "Didact Gothic", sans-serif;
+  font-size: 2.5em;
   margin-top: 0;
+  margin-bottom: 20px;
 }
 /* line 45, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
 #webformcontact .webform-client-form:before, #webformcontact .webform-client-form:after {
@@ -2095,25 +2105,34 @@ tr.selected td {
 #webformcontact .webform-client-form:after {
   clear: both;
 }
-/* line 21, ../sass/theme-A/_contact.scss */
+/* line 22, ../sass/theme-A/_contact.scss */
+#webformcontact .webform-client-form .form-text {
+  width: 80%;
+}
+/* line 25, ../sass/theme-A/_contact.scss */
+#webformcontact .webform-client-form .form-textarea {
+  width: 90%;
+}
+/* line 28, ../sass/theme-A/_contact.scss */
+#webformcontact .webform-client-form .form-text, #webformcontact .webform-client-form .form-textarea {
+  margin: auto;
+  display: block;
+}
+/* line 32, ../sass/theme-A/_contact.scss */
 #webformcontact .webform-client-form .webform-component--name {
   float: left;
   width: 50%;
   margin-left: 0%;
   margin-right: -50%;
 }
-/* line 24, ../sass/theme-A/_contact.scss */
+/* line 35, ../sass/theme-A/_contact.scss */
 #webformcontact .webform-client-form .webform-component--email {
   float: left;
   width: 50%;
   margin-left: 50%;
   margin-right: -100%;
 }
-/* line 26, ../sass/theme-A/_contact.scss */
-#webformcontact .webform-client-form .webform-component--email input {
-  float: right;
-}
-/* line 30, ../sass/theme-A/_contact.scss */
+/* line 38, ../sass/theme-A/_contact.scss */
 #webformcontact .webform-client-form .webform-component--message {
   clear: left;
   float: left;
@@ -2121,7 +2140,7 @@ tr.selected td {
   margin-left: 0%;
   margin-right: -100%;
 }
-/* line 34, ../sass/theme-A/_contact.scss */
+/* line 42, ../sass/theme-A/_contact.scss */
 #webformcontact .webform-client-form .form-actions {
   clear: left;
   float: left;
@@ -2129,9 +2148,11 @@ tr.selected td {
   margin-left: 0%;
   margin-right: -100%;
 }
-/* line 37, ../sass/theme-A/_contact.scss */
+/* line 45, ../sass/theme-A/_contact.scss */
 #webformcontact .webform-client-form .form-actions input {
   float: right;
+  clear: both;
+  margin-right: 5%;
 }
 
 /* line 2, ../sass/theme-A/_cart.scss */
@@ -2256,32 +2277,36 @@ input:placeholder-shown, textarea:placeholder-shown {
 input.webform-submit {
   background-color: rgba(255, 255, 255, 0.3);
 }
+/* line 51, ../sass/theme-A/_main.scss */
+input.webform-submit:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
 
-/* line 52, ../sass/theme-A/_main.scss */
+/* line 55, ../sass/theme-A/_main.scss */
 a {
   outline: none;
 }
 
-/* line 55, ../sass/theme-A/_main.scss */
+/* line 58, ../sass/theme-A/_main.scss */
 #page {
   max-width: 100%;
 }
-/* line 57, ../sass/theme-A/_main.scss */
+/* line 60, ../sass/theme-A/_main.scss */
 #page .column {
   padding: 0;
 }
 
-/* line 61, ../sass/theme-A/_main.scss */
+/* line 64, ../sass/theme-A/_main.scss */
 #main {
   padding: 0;
 }
 
-/* line 64, ../sass/theme-A/_main.scss */
+/* line 67, ../sass/theme-A/_main.scss */
 .menu-margin-needed {
   margin-top: 48px;
 }
 
-/* line 67, ../sass/theme-A/_main.scss */
+/* line 70, ../sass/theme-A/_main.scss */
 #content.not-front {
   padding: 20px 60px;
 }
