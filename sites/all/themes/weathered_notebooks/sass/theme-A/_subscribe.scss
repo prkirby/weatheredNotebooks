@@ -10,14 +10,14 @@
     color: white;
 
     .single-page {
-        padding: 40px 0;
+        padding: 40px 60px;
 
         .node-20 {
             @include zen-grid-container();
             .field {
                 @include zen-grid-item(3, 1);
                 .field-item {
-                    margin-left: 60px;
+                    // margin-left: 60px;
                     h2 {
                         font-family: $didactGothic;
                     }

@@ -1966,7 +1966,7 @@ tr.selected td {
 }
 /* line 12, ../sass/theme-A/_subscribe.scss */
 #webformsubscribe .single-page {
-  padding: 40px 0;
+  padding: 40px 60px;
 }
 /* line 45, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
 #webformsubscribe .single-page .node-20:before, #webformsubscribe .single-page .node-20:after {
@@ -1983,10 +1983,6 @@ tr.selected td {
   width: 60%;
   margin-left: 0%;
   margin-right: -60%;
-}
-/* line 19, ../sass/theme-A/_subscribe.scss */
-#webformsubscribe .single-page .node-20 .field .field-item {
-  margin-left: 60px;
 }
 /* line 21, ../sass/theme-A/_subscribe.scss */
 #webformsubscribe .single-page .node-20 .field .field-item h2 {
@@ -2224,25 +2220,68 @@ body {
 }
 
 /* line 25, ../sass/theme-A/_main.scss */
+input, textarea {
+  background-color: transparent;
+  color: white;
+  border: 3px solid white;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  outline: none;
+}
+/* line 33, ../sass/theme-A/_main.scss */
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: white;
+}
+/* line 36, ../sass/theme-A/_main.scss */
+input:-moz-placeholder, textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: white;
+}
+/* line 39, ../sass/theme-A/_main.scss */
+input::-moz-placeholder, textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white;
+}
+/* line 42, ../sass/theme-A/_main.scss */
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: white;
+}
+/* line 45, ../sass/theme-A/_main.scss */
+input:placeholder-shown, textarea:placeholder-shown {
+  color: white;
+}
+
+/* line 49, ../sass/theme-A/_main.scss */
+input.webform-submit {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* line 52, ../sass/theme-A/_main.scss */
+a {
+  outline: none;
+}
+
+/* line 55, ../sass/theme-A/_main.scss */
 #page {
   max-width: 100%;
 }
-/* line 27, ../sass/theme-A/_main.scss */
+/* line 57, ../sass/theme-A/_main.scss */
 #page .column {
   padding: 0;
 }
 
-/* line 31, ../sass/theme-A/_main.scss */
+/* line 61, ../sass/theme-A/_main.scss */
 #main {
   padding: 0;
 }
 
-/* line 34, ../sass/theme-A/_main.scss */
+/* line 64, ../sass/theme-A/_main.scss */
 .menu-margin-needed {
   margin-top: 48px;
 }
 
-/* line 37, ../sass/theme-A/_main.scss */
+/* line 67, ../sass/theme-A/_main.scss */
 #content.not-front {
   padding: 20px 60px;
 }

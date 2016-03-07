@@ -22,6 +22,36 @@ body {
     background-color: $beige;
     padding: 0;
 }
+input, textarea {
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    outline: none;
+    &::-webkit-input-placeholder {
+        color: white;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+       color: white;
+    }
+    &::-moz-placeholder {  /* Firefox 19+ */
+       color: white;
+    }
+    &:-ms-input-placeholder {
+       color: white;
+    }
+    &:placeholder-shown {
+        color: white;
+    }
+}
+input.webform-submit {
+    background-color: $transWhite;
+}
+a {
+    outline: none;
+}
 #page {
     max-width: 100%;
     .column {
