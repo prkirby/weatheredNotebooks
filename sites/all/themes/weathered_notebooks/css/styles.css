@@ -1860,8 +1860,9 @@ tr.selected td {
 #articlecallaction img {
   width: 100vw;
   height: 755px;
+  display: block;
 }
-/* line 7, ../sass/theme-A/_call-to-action.scss */
+/* line 8, ../sass/theme-A/_call-to-action.scss */
 #articlecallaction .quality-slogan {
   position: absolute;
   left: 5%;
@@ -1869,19 +1870,19 @@ tr.selected td {
   font-family: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
   font-size: 2em;
 }
-/* line 13, ../sass/theme-A/_call-to-action.scss */
+/* line 14, ../sass/theme-A/_call-to-action.scss */
 #articlecallaction .quality-slogan h1 {
   font-family: "Didact Gothic", sans-serif;
   font-size: 2em;
   margin: 15px 0;
 }
-/* line 19, ../sass/theme-A/_call-to-action.scss */
+/* line 20, ../sass/theme-A/_call-to-action.scss */
 #articlecallaction .call-to-action-btn {
   position: absolute;
   right: 28%;
   top: 51%;
 }
-/* line 23, ../sass/theme-A/_call-to-action.scss */
+/* line 24, ../sass/theme-A/_call-to-action.scss */
 #articlecallaction .call-to-action-btn a {
   font-size: 2.5em;
   font-family: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
@@ -2008,13 +2009,14 @@ tr.selected td {
   display: block;
   width: 90%;
   margin: 60px auto;
+  border: 0;
 }
-/* line 7, ../sass/theme-A/_flex-slider.scss */
+/* line 8, ../sass/theme-A/_flex-slider.scss */
 #gallery .flex-control-nav {
   bottom: 15px;
   z-index: 2000;
 }
-/* line 10, ../sass/theme-A/_flex-slider.scss */
+/* line 11, ../sass/theme-A/_flex-slider.scss */
 #gallery .flex-control-nav .flex-active {
   background: rgba(255, 255, 255, 0.8);
 }
