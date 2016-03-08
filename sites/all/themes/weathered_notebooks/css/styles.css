@@ -1897,12 +1897,13 @@ tr.selected td {
 /* line 1, ../sass/theme-A/_about.scss */
 #articleaboutus {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/sites/all/themes/weathered_notebooks/bkg-images/About_Backdrop.jpg");
-  background-size: 100% auto;
-  background-clip: border-box;
+  background-size: cover;
   background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: white;
 }
-/* line 11, ../sass/theme-A/_about.scss */
+/* line 13, ../sass/theme-A/_about.scss */
 #articleaboutus .about-us-content {
   padding: 40px 0;
 }
@@ -1915,14 +1916,14 @@ tr.selected td {
 #articleaboutus .about-us-content:after {
   clear: both;
 }
-/* line 14, ../sass/theme-A/_about.scss */
+/* line 16, ../sass/theme-A/_about.scss */
 #articleaboutus .about-us-content .about-us-text {
   float: left;
   width: 60%;
   margin-left: 0%;
   margin-right: -60%;
 }
-/* line 16, ../sass/theme-A/_about.scss */
+/* line 18, ../sass/theme-A/_about.scss */
 #articleaboutus .about-us-content .about-us-text h2 {
   margin: 0;
   margin-left: 60px;
@@ -1931,18 +1932,18 @@ tr.selected td {
   font-size: 2em;
   font-family: "Didact Gothic", sans-serif;
 }
-/* line 24, ../sass/theme-A/_about.scss */
+/* line 26, ../sass/theme-A/_about.scss */
 #articleaboutus .about-us-content .about-us-text p {
   margin-left: 60px;
 }
-/* line 28, ../sass/theme-A/_about.scss */
+/* line 30, ../sass/theme-A/_about.scss */
 #articleaboutus .about-us-content .about-us-img {
   float: left;
   width: 40%;
   margin-left: 60%;
   margin-right: -100%;
 }
-/* line 30, ../sass/theme-A/_about.scss */
+/* line 32, ../sass/theme-A/_about.scss */
 #articleaboutus .about-us-content .about-us-img img {
   display: block;
   width: 280px;
@@ -1976,12 +1977,13 @@ tr.selected td {
 /* line 1, ../sass/theme-A/_subscribe.scss */
 #webformsubscribe {
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("/sites/all/themes/weathered_notebooks/bkg-images/Subscribe_Backdrop.jpg");
-  background-size: 100% auto;
-  background-clip: border-box;
+  background-size: cover;
   background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: white;
 }
-/* line 12, ../sass/theme-A/_subscribe.scss */
+/* line 13, ../sass/theme-A/_subscribe.scss */
 #webformsubscribe .single-page {
   padding: 40px 60px;
 }
@@ -1994,26 +1996,26 @@ tr.selected td {
 #webformsubscribe .single-page .node-20:after {
   clear: both;
 }
-/* line 17, ../sass/theme-A/_subscribe.scss */
+/* line 18, ../sass/theme-A/_subscribe.scss */
 #webformsubscribe .single-page .node-20 .field {
   float: left;
   width: 60%;
   margin-left: 0%;
   margin-right: -60%;
 }
-/* line 21, ../sass/theme-A/_subscribe.scss */
+/* line 22, ../sass/theme-A/_subscribe.scss */
 #webformsubscribe .single-page .node-20 .field .field-item h2 {
   font-family: "Didact Gothic", sans-serif;
   font-size: 2.5em;
 }
-/* line 27, ../sass/theme-A/_subscribe.scss */
+/* line 28, ../sass/theme-A/_subscribe.scss */
 #webformsubscribe .single-page .node-20 .webform-client-form {
   float: left;
   width: 40%;
   margin-left: 60%;
   margin-right: -100%;
 }
-/* line 32, ../sass/theme-A/_subscribe.scss */
+/* line 33, ../sass/theme-A/_subscribe.scss */
 #webformsubscribe .webform-submit {
   width: 100%;
 }
@@ -2096,8 +2098,6 @@ tr.selected td {
 #webformcontact {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/sites/all/themes/weathered_notebooks/bkg-images/Contact_Backdrop.jpg");
   background-size: 100% auto;
-  background-clip: border-box;
-  background-position: center center;
   color: white;
   padding: 40px 60px;
   margin: 60px 0;

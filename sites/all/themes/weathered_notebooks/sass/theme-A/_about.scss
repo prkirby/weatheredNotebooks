@@ -4,9 +4,11 @@
       rgba(0, 0, 0, 0.4)
     ),
     url("/sites/all/themes/weathered_notebooks/bkg-images/About_Backdrop.jpg");
-    background-size: 100% auto;
-    background-clip: border-box;
+    background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
     color: white;
     .about-us-content {
         @include zen-grid-container();
