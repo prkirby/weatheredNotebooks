@@ -1,0 +1,13 @@
+#content.not-front {
+    min-height: 100vh;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("/sites/all/themes/weathered_notebooks/bkg-images/Contact_Backdrop.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}

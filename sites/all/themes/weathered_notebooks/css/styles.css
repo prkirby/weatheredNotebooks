@@ -1903,7 +1903,7 @@ tr.selected td {
   background-attachment: fixed;
   color: white;
 }
-/* line 13, ../sass/theme-A/_about.scss */
+/* line 12, ../sass/theme-A/_about.scss */
 #articleaboutus .about-us-content {
   padding: 40px 0;
 }
@@ -1916,14 +1916,14 @@ tr.selected td {
 #articleaboutus .about-us-content:after {
   clear: both;
 }
-/* line 16, ../sass/theme-A/_about.scss */
+/* line 15, ../sass/theme-A/_about.scss */
 #articleaboutus .about-us-content .about-us-text {
   float: left;
   width: 60%;
   margin-left: 0%;
   margin-right: -60%;
 }
-/* line 18, ../sass/theme-A/_about.scss */
+/* line 17, ../sass/theme-A/_about.scss */
 #articleaboutus .about-us-content .about-us-text h2 {
   margin: 0;
   margin-left: 60px;
@@ -1932,18 +1932,18 @@ tr.selected td {
   font-size: 2em;
   font-family: "Didact Gothic", sans-serif;
 }
-/* line 26, ../sass/theme-A/_about.scss */
+/* line 25, ../sass/theme-A/_about.scss */
 #articleaboutus .about-us-content .about-us-text p {
   margin-left: 60px;
 }
-/* line 30, ../sass/theme-A/_about.scss */
+/* line 29, ../sass/theme-A/_about.scss */
 #articleaboutus .about-us-content .about-us-img {
   float: left;
   width: 40%;
   margin-left: 60%;
   margin-right: -100%;
 }
-/* line 32, ../sass/theme-A/_about.scss */
+/* line 31, ../sass/theme-A/_about.scss */
 #articleaboutus .about-us-content .about-us-img img {
   display: block;
   width: 280px;
@@ -2100,7 +2100,7 @@ tr.selected td {
   background-size: 100% auto;
   color: white;
   padding: 40px 60px;
-  margin: 60px 0;
+  margin-top: 60px;
 }
 /* line 13, ../sass/theme-A/_contact.scss */
 #webformcontact h2 {
@@ -2247,13 +2247,24 @@ tr.selected td {
   margin: 20px;
 }
 
-/* line 21, ../sass/theme-A/_main.scss */
+/* line 1, ../sass/theme-A/_not-front.scss */
+#content.not-front {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("/sites/all/themes/weathered_notebooks/bkg-images/Contact_Backdrop.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+/* line 22, ../sass/theme-A/_main.scss */
 body {
   background-color: #e1d7c3;
   padding: 0;
 }
 
-/* line 25, ../sass/theme-A/_main.scss */
+/* line 26, ../sass/theme-A/_main.scss */
 input, textarea {
   background-color: transparent;
   color: white;
@@ -2263,63 +2274,63 @@ input, textarea {
   font-size: 1.2em;
   outline: none;
 }
-/* line 33, ../sass/theme-A/_main.scss */
+/* line 34, ../sass/theme-A/_main.scss */
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: white;
 }
-/* line 36, ../sass/theme-A/_main.scss */
+/* line 37, ../sass/theme-A/_main.scss */
 input:-moz-placeholder, textarea:-moz-placeholder {
   /* Firefox 18- */
   color: white;
 }
-/* line 39, ../sass/theme-A/_main.scss */
+/* line 40, ../sass/theme-A/_main.scss */
 input::-moz-placeholder, textarea::-moz-placeholder {
   /* Firefox 19+ */
   color: white;
 }
-/* line 42, ../sass/theme-A/_main.scss */
+/* line 43, ../sass/theme-A/_main.scss */
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: white;
 }
-/* line 45, ../sass/theme-A/_main.scss */
+/* line 46, ../sass/theme-A/_main.scss */
 input:placeholder-shown, textarea:placeholder-shown {
   color: white;
 }
 
-/* line 49, ../sass/theme-A/_main.scss */
+/* line 50, ../sass/theme-A/_main.scss */
 input.webform-submit {
   background-color: rgba(255, 255, 255, 0.3);
 }
-/* line 51, ../sass/theme-A/_main.scss */
+/* line 52, ../sass/theme-A/_main.scss */
 input.webform-submit:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 55, ../sass/theme-A/_main.scss */
+/* line 56, ../sass/theme-A/_main.scss */
 a {
   outline: none;
 }
 
-/* line 58, ../sass/theme-A/_main.scss */
+/* line 59, ../sass/theme-A/_main.scss */
 #page {
   max-width: 100%;
 }
-/* line 60, ../sass/theme-A/_main.scss */
+/* line 61, ../sass/theme-A/_main.scss */
 #page .column {
   padding: 0;
 }
 
-/* line 64, ../sass/theme-A/_main.scss */
+/* line 65, ../sass/theme-A/_main.scss */
 #main {
   padding: 0;
 }
 
-/* line 67, ../sass/theme-A/_main.scss */
+/* line 68, ../sass/theme-A/_main.scss */
 .menu-margin-needed {
   margin-top: 48px;
 }
 
-/* line 70, ../sass/theme-A/_main.scss */
+/* line 71, ../sass/theme-A/_main.scss */
 #content.not-front {
   padding: 20px 60px;
 }
