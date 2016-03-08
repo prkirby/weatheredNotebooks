@@ -4,10 +4,38 @@
       rgba(0, 0, 0, 0.55),
       rgba(0, 0, 0, 0.55)
     ),
-    url("/sites/all/themes/weathered_notebooks/bkg-images/Contact_Backdrop.jpg");
+    url("/sites/all/themes/weathered_notebooks/bkg-images/About_Backdrop.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
+
+    tr {
+        border: none;
+        &.odd {
+            background-color: $transDarkGray;
+        }
+        &.even {
+            background-color: $transGray;
+        }
+        td {
+            padding: 10px 20px;
+        }
+    }
+    .commerce-line-item-actions {
+        input {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+    }
+    .form-wrapper {
+        background-color: $transDarkGray;
+        &.checkout_review {
+            background-color: transparent;
+        }
+    }
+    .checkout-continue {
+        margin-right: 15px;
+    }
 }

@@ -1,0 +1,38 @@
+.messages--commerce-add-to-cart-confirmation {
+    .added-product-title {
+        color: black !important;
+    }
+    .button-wrapper {
+        background-color: $beige !important;
+        .button {
+            transition: opacity .3s ease-out;
+            -moz-transition: opacity .3s ease-out;
+            -webkit-transition: opacity .3s ease-out;
+            -o-transition: opacity .3s ease-out;
+            a {
+                text-decoration: none;
+            }
+            &.checkout {
+                background-color: $darkGray !important;
+                &:hover {
+                    background-color: $transDarkGray;
+                }
+            }
+            &.continue {
+                background-color: $gray !important;
+                &:hover {
+                    background-color: $transGray;
+                }
+            }
+        }
+    }
+    .views-field-commerce-total{
+        color: black !important;
+        .field-content {
+            color: black !important;
+        }
+    }
+    .view-confirm-message-product-display {
+        font-family: $font-body;
+    }
+}

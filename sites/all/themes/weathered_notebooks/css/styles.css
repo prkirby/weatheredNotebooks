@@ -1797,6 +1797,7 @@ tr.selected td {
 * Collect all partials for theme A
 **/
 /* Colors */
+/*transparent colors*/
 /* line 1, ../sass/theme-A/_single-page.scss */
 .single-page-title {
   display: none;
@@ -2062,34 +2063,74 @@ tr.selected td {
   display: block;
   margin: 0 10px;
 }
-/* line 14, ../sass/theme-A/_shop.scss */
+/* line 15, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row .product-img img {
   display: block;
+  position: relative;
+  opacity: 0.7;
+  transition: opacity .3s ease-out;
+  -moz-transition: opacity .3s ease-out;
+  -webkit-transition: opacity .3s ease-out;
+  -o-transition: opacity .3s ease-out;
 }
-/* line 18, ../sass/theme-A/_shop.scss */
+/* line 23, ../sass/theme-A/_shop.scss */
+#shop .view-content .views-row .product-img img:hover {
+  opacity: 1;
+}
+/* line 31, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row .product-info {
   position: absolute;
-  bottom: 0;
+  bottom: 5%;
+  width: 100%;
+  text-align: center;
 }
-/* line 21, ../sass/theme-A/_shop.scss */
+/* line 36, ../sass/theme-A/_shop.scss */
+#shop .view-content .views-row .product-info .product-title {
+  margin: 0 0;
+  color: #555555;
+}
+/* line 40, ../sass/theme-A/_shop.scss */
+#shop .view-content .views-row .product-info .product-price {
+  color: #898989;
+}
+/* line 43, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row .product-info div {
   display: block;
   margin: auto;
 }
-/* line 27, ../sass/theme-A/_shop.scss */
+/* line 49, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row-1, #shop .view-content .views-row-2 {
   width: 30%;
 }
-/* line 30, ../sass/theme-A/_shop.scss */
+/* line 51, ../sass/theme-A/_shop.scss */
+#shop .view-content .views-row-1 .product-title, #shop .view-content .views-row-2 .product-title {
+  font-size: 1.8em;
+}
+/* line 55, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row-3, #shop .view-content .views-row-4 {
   width: 20%;
 }
-/* line 33, ../sass/theme-A/_shop.scss */
+/* line 57, ../sass/theme-A/_shop.scss */
+#shop .view-content .views-row-3 .product-title, #shop .view-content .views-row-4 .product-title {
+  font-size: 1.2em;
+}
+/* line 61, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row-5 {
   width: 40%;
   clear: right;
 }
-/* line 36, ../sass/theme-A/_shop.scss */
+/* line 64, ../sass/theme-A/_shop.scss */
+#shop .view-content .views-row-5 .product-info {
+  text-align: right;
+  top: 5%;
+  right: 5%;
+  bottom: auto;
+}
+/* line 69, ../sass/theme-A/_shop.scss */
+#shop .view-content .views-row-5 .product-info .product-title {
+  font-size: 1.2em;
+}
+/* line 73, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row-5 .product-img {
   display: block;
 }
@@ -2250,21 +2291,162 @@ tr.selected td {
 /* line 1, ../sass/theme-A/_not-front.scss */
 #content.not-front {
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("/sites/all/themes/weathered_notebooks/bkg-images/Contact_Backdrop.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("/sites/all/themes/weathered_notebooks/bkg-images/About_Backdrop.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: white;
 }
+/* line 14, ../sass/theme-A/_not-front.scss */
+#content.not-front tr {
+  border: none;
+}
+/* line 16, ../sass/theme-A/_not-front.scss */
+#content.not-front tr.odd {
+  background-color: rgba(85, 85, 85, 0.4);
+}
+/* line 19, ../sass/theme-A/_not-front.scss */
+#content.not-front tr.even {
+  background-color: rgba(137, 137, 137, 0.4);
+}
+/* line 22, ../sass/theme-A/_not-front.scss */
+#content.not-front tr td {
+  padding: 10px 20px;
+}
+/* line 27, ../sass/theme-A/_not-front.scss */
+#content.not-front .commerce-line-item-actions input {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+/* line 32, ../sass/theme-A/_not-front.scss */
+#content.not-front .form-wrapper {
+  background-color: rgba(85, 85, 85, 0.4);
+}
+/* line 34, ../sass/theme-A/_not-front.scss */
+#content.not-front .form-wrapper.checkout_review {
+  background-color: transparent;
+}
+/* line 38, ../sass/theme-A/_not-front.scss */
+#content.not-front .checkout-continue {
+  margin-right: 15px;
+}
 
-/* line 22, ../sass/theme-A/_main.scss */
+/* line 3, ../sass/theme-A/_shop-modal.scss */
+.product-modal {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 5, ../sass/theme-A/_shop-modal.scss */
+.product-modal .product-img-modal {
+  width: 50%;
+  margin: 5px 10px;
+  max-height: 70%;
+}
+/* line 9, ../sass/theme-A/_shop-modal.scss */
+.product-modal .product-img-modal img {
+  box-shadow: 5px 5px 20px black;
+}
+/* line 13, ../sass/theme-A/_shop-modal.scss */
+.product-modal .product-purchase-modal {
+  width: 50%;
+  margin: 0 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+  text-align: center;
+}
+/* line 22, ../sass/theme-A/_shop-modal.scss */
+.product-modal .product-purchase-modal .product-header-modal .product-title-modal {
+  font-size: 2em;
+  margin: 0;
+}
+/* line 26, ../sass/theme-A/_shop-modal.scss */
+.product-modal .product-purchase-modal .product-header-modal .product-price-modal {
+  color: #555555;
+}
+/* line 30, ../sass/theme-A/_shop-modal.scss */
+.product-modal .product-purchase-modal input {
+  color: #555555;
+  border-color: black;
+  margin: 0 !important;
+}
+/* line 35, ../sass/theme-A/_shop-modal.scss */
+.product-modal .product-purchase-modal .ui-spinner {
+  display: none;
+}
+
+/* line 2, ../sass/theme-A/_cart-confirmation.scss */
+.messages--commerce-add-to-cart-confirmation .added-product-title {
+  color: black !important;
+}
+/* line 5, ../sass/theme-A/_cart-confirmation.scss */
+.messages--commerce-add-to-cart-confirmation .button-wrapper {
+  background-color: #e1d7c3 !important;
+}
+/* line 7, ../sass/theme-A/_cart-confirmation.scss */
+.messages--commerce-add-to-cart-confirmation .button-wrapper .button {
+  transition: opacity .3s ease-out;
+  -moz-transition: opacity .3s ease-out;
+  -webkit-transition: opacity .3s ease-out;
+  -o-transition: opacity .3s ease-out;
+}
+/* line 12, ../sass/theme-A/_cart-confirmation.scss */
+.messages--commerce-add-to-cart-confirmation .button-wrapper .button a {
+  text-decoration: none;
+}
+/* line 15, ../sass/theme-A/_cart-confirmation.scss */
+.messages--commerce-add-to-cart-confirmation .button-wrapper .button.checkout {
+  background-color: #555555 !important;
+}
+/* line 17, ../sass/theme-A/_cart-confirmation.scss */
+.messages--commerce-add-to-cart-confirmation .button-wrapper .button.checkout:hover {
+  background-color: rgba(85, 85, 85, 0.4);
+}
+/* line 21, ../sass/theme-A/_cart-confirmation.scss */
+.messages--commerce-add-to-cart-confirmation .button-wrapper .button.continue {
+  background-color: #898989 !important;
+}
+/* line 23, ../sass/theme-A/_cart-confirmation.scss */
+.messages--commerce-add-to-cart-confirmation .button-wrapper .button.continue:hover {
+  background-color: rgba(137, 137, 137, 0.4);
+}
+/* line 29, ../sass/theme-A/_cart-confirmation.scss */
+.messages--commerce-add-to-cart-confirmation .views-field-commerce-total {
+  color: black !important;
+}
+/* line 31, ../sass/theme-A/_cart-confirmation.scss */
+.messages--commerce-add-to-cart-confirmation .views-field-commerce-total .field-content {
+  color: black !important;
+}
+/* line 35, ../sass/theme-A/_cart-confirmation.scss */
+.messages--commerce-add-to-cart-confirmation .view-confirm-message-product-display {
+  font-family: "Didact Gothic", sans-serif;
+}
+
+/* line 24, ../sass/theme-A/_main.scss */
 body {
   background-color: #e1d7c3;
   padding: 0;
 }
 
-/* line 26, ../sass/theme-A/_main.scss */
+/* line 28, ../sass/theme-A/_main.scss */
 input, textarea {
   background-color: transparent;
   color: white;
@@ -2274,63 +2456,63 @@ input, textarea {
   font-size: 1.2em;
   outline: none;
 }
-/* line 34, ../sass/theme-A/_main.scss */
+/* line 36, ../sass/theme-A/_main.scss */
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: white;
 }
-/* line 37, ../sass/theme-A/_main.scss */
+/* line 39, ../sass/theme-A/_main.scss */
 input:-moz-placeholder, textarea:-moz-placeholder {
   /* Firefox 18- */
   color: white;
 }
-/* line 40, ../sass/theme-A/_main.scss */
+/* line 42, ../sass/theme-A/_main.scss */
 input::-moz-placeholder, textarea::-moz-placeholder {
   /* Firefox 19+ */
   color: white;
 }
-/* line 43, ../sass/theme-A/_main.scss */
+/* line 45, ../sass/theme-A/_main.scss */
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: white;
 }
-/* line 46, ../sass/theme-A/_main.scss */
+/* line 48, ../sass/theme-A/_main.scss */
 input:placeholder-shown, textarea:placeholder-shown {
   color: white;
 }
 
-/* line 50, ../sass/theme-A/_main.scss */
+/* line 52, ../sass/theme-A/_main.scss */
 input.webform-submit {
   background-color: rgba(255, 255, 255, 0.3);
 }
-/* line 52, ../sass/theme-A/_main.scss */
+/* line 54, ../sass/theme-A/_main.scss */
 input.webform-submit:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 56, ../sass/theme-A/_main.scss */
+/* line 58, ../sass/theme-A/_main.scss */
 a {
   outline: none;
 }
 
-/* line 59, ../sass/theme-A/_main.scss */
+/* line 61, ../sass/theme-A/_main.scss */
 #page {
   max-width: 100%;
 }
-/* line 61, ../sass/theme-A/_main.scss */
+/* line 63, ../sass/theme-A/_main.scss */
 #page .column {
   padding: 0;
 }
 
-/* line 65, ../sass/theme-A/_main.scss */
+/* line 67, ../sass/theme-A/_main.scss */
 #main {
   padding: 0;
 }
 
-/* line 68, ../sass/theme-A/_main.scss */
+/* line 70, ../sass/theme-A/_main.scss */
 .menu-margin-needed {
   margin-top: 48px;
 }
 
-/* line 71, ../sass/theme-A/_main.scss */
+/* line 73, ../sass/theme-A/_main.scss */
 #content.not-front {
   padding: 20px 60px;
 }

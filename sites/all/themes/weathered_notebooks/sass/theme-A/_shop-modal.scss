@@ -1,0 +1,40 @@
+#cboxWrapper {
+}
+.product-modal {
+    @include flexbox;
+    .product-img-modal {
+        width: 50%;
+        margin: 5px 10px;
+        max-height: 70%;
+        img {
+            box-shadow: 5px 5px 20px black;
+        }
+    }
+    .product-purchase-modal {
+        width: 50%;
+        margin: 0 10px;
+        @include flexbox;
+        @include flex-direction(column);
+        @include justify-content(space-between);
+        text-align: center;
+        .product-header-modal  {
+
+            .product-title-modal {
+                font-size: 2em;
+                margin: 0;
+            }
+            .product-price-modal {
+                color: $darkGray;
+            }
+        }
+        input {
+            color: $darkGray;
+            border-color: black;
+            margin: 0 !important;
+        }
+        .ui-spinner {
+            display: none;
+        }
+
+    }
+}
