@@ -29,6 +29,9 @@
     }
     .form-wrapper {
         background-color: $transDarkGray;
+        .form-wrapper {
+            background-color: transparent;
+        }
         &.checkout_review {
             background-color: transparent;
         }

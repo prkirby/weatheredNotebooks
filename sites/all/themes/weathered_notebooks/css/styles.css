@@ -1880,7 +1880,7 @@ tr.selected td {
   font-size: 25px;
   text-transform: uppercase;
   font-family: "Muli", sans-serif;
-  font-weight: 500;
+  font-weight: 300;
 }
 /* line 45, ../sass/theme-A/_menu.scss */
 #main-menu ul li a:hover {
@@ -2369,32 +2369,36 @@ tr.selected td {
   background-color: rgba(85, 85, 85, 0.4);
 }
 /* line 32, ../sass/theme-A/_not-front.scss */
-#content.not-front .form-wrapper.checkout_review {
+#content.not-front .form-wrapper .form-wrapper {
   background-color: transparent;
 }
 /* line 35, ../sass/theme-A/_not-front.scss */
+#content.not-front .form-wrapper.checkout_review {
+  background-color: transparent;
+}
+/* line 38, ../sass/theme-A/_not-front.scss */
 #content.not-front .form-wrapper tr {
   background-color: none;
 }
-/* line 39, ../sass/theme-A/_not-front.scss */
+/* line 42, ../sass/theme-A/_not-front.scss */
 #content.not-front .checkout-continue {
   margin-right: 15px;
 }
-/* line 42, ../sass/theme-A/_not-front.scss */
+/* line 45, ../sass/theme-A/_not-front.scss */
 #content.not-front .commerce-line-item-actions {
   background-color: transparent;
 }
-/* line 44, ../sass/theme-A/_not-front.scss */
+/* line 47, ../sass/theme-A/_not-front.scss */
 #content.not-front .commerce-line-item-actions input {
   margin-left: 20px;
   margin-bottom: 10px;
 }
-/* line 50, ../sass/theme-A/_not-front.scss */
+/* line 53, ../sass/theme-A/_not-front.scss */
 #content.not-front .commerce-line-item-views-form th {
   padding: 0;
   text-align: center;
 }
-/* line 56, ../sass/theme-A/_not-front.scss */
+/* line 59, ../sass/theme-A/_not-front.scss */
 #content.not-front .views-field-edit-quantity input {
   padding: 2px 5px;
 }
@@ -2518,7 +2522,7 @@ body {
 }
 
 /* line 28, ../sass/theme-A/_main.scss */
-input, textarea {
+input, textarea, select {
   background-color: transparent;
   color: white;
   border: 3px solid white;
@@ -2528,62 +2532,68 @@ input, textarea {
   outline: none;
 }
 /* line 36, ../sass/theme-A/_main.scss */
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
   color: white;
 }
 /* line 39, ../sass/theme-A/_main.scss */
-input:-moz-placeholder, textarea:-moz-placeholder {
+input:-moz-placeholder, textarea:-moz-placeholder, select:-moz-placeholder {
   /* Firefox 18- */
   color: white;
 }
 /* line 42, ../sass/theme-A/_main.scss */
-input::-moz-placeholder, textarea::-moz-placeholder {
+input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
   /* Firefox 19+ */
   color: white;
 }
 /* line 45, ../sass/theme-A/_main.scss */
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder {
   color: white;
 }
 /* line 48, ../sass/theme-A/_main.scss */
-input:placeholder-shown, textarea:placeholder-shown {
+input:placeholder-shown, textarea:placeholder-shown, select:placeholder-shown {
   color: white;
 }
 
 /* line 52, ../sass/theme-A/_main.scss */
+select {
+  width: 350px;
+  font-size: 100%;
+}
+
+/* line 57, ../sass/theme-A/_main.scss */
 input.webform-submit {
   background-color: rgba(255, 255, 255, 0.3);
 }
-/* line 54, ../sass/theme-A/_main.scss */
+/* line 59, ../sass/theme-A/_main.scss */
 input.webform-submit:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 58, ../sass/theme-A/_main.scss */
+/* line 63, ../sass/theme-A/_main.scss */
 a {
   outline: none;
 }
 
-/* line 61, ../sass/theme-A/_main.scss */
+/* line 66, ../sass/theme-A/_main.scss */
 #page {
   max-width: 100%;
 }
-/* line 63, ../sass/theme-A/_main.scss */
+/* line 68, ../sass/theme-A/_main.scss */
 #page .column {
   padding: 0;
 }
 
-/* line 67, ../sass/theme-A/_main.scss */
+/* line 72, ../sass/theme-A/_main.scss */
 #main {
   padding: 0;
 }
 
-/* line 70, ../sass/theme-A/_main.scss */
+/* line 75, ../sass/theme-A/_main.scss */
 .menu-margin-needed {
   margin-top: 48px;
 }
 
-/* line 73, ../sass/theme-A/_main.scss */
+/* line 78, ../sass/theme-A/_main.scss */
 #content.not-front {
   padding: 20px 60px;
 }
