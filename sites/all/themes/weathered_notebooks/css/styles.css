@@ -2345,36 +2345,58 @@ tr.selected td {
 }
 /* line 14, ../sass/theme-A/_not-front.scss */
 #content.not-front tr {
+  font-family: "Muli", sans-serif;
   border: none;
 }
-/* line 16, ../sass/theme-A/_not-front.scss */
+/* line 17, ../sass/theme-A/_not-front.scss */
 #content.not-front tr.odd {
   background-color: rgba(85, 85, 85, 0.4);
 }
-/* line 19, ../sass/theme-A/_not-front.scss */
+/* line 20, ../sass/theme-A/_not-front.scss */
 #content.not-front tr.even {
   background-color: rgba(137, 137, 137, 0.4);
 }
-/* line 22, ../sass/theme-A/_not-front.scss */
+/* line 23, ../sass/theme-A/_not-front.scss */
+#content.not-front tr th {
+  font-family: "Montserrat", sans-serif;
+}
+/* line 26, ../sass/theme-A/_not-front.scss */
 #content.not-front tr td {
   padding: 10px 20px;
 }
-/* line 27, ../sass/theme-A/_not-front.scss */
+/* line 30, ../sass/theme-A/_not-front.scss */
+#content.not-front .form-wrapper {
+  background-color: rgba(85, 85, 85, 0.4);
+}
+/* line 32, ../sass/theme-A/_not-front.scss */
+#content.not-front .form-wrapper.checkout_review {
+  background-color: transparent;
+}
+/* line 35, ../sass/theme-A/_not-front.scss */
+#content.not-front .form-wrapper tr {
+  background-color: none;
+}
+/* line 39, ../sass/theme-A/_not-front.scss */
+#content.not-front .checkout-continue {
+  margin-right: 15px;
+}
+/* line 42, ../sass/theme-A/_not-front.scss */
+#content.not-front .commerce-line-item-actions {
+  background-color: transparent;
+}
+/* line 44, ../sass/theme-A/_not-front.scss */
 #content.not-front .commerce-line-item-actions input {
   margin-left: 20px;
   margin-bottom: 10px;
 }
-/* line 32, ../sass/theme-A/_not-front.scss */
-#content.not-front .form-wrapper {
-  background-color: rgba(85, 85, 85, 0.4);
+/* line 50, ../sass/theme-A/_not-front.scss */
+#content.not-front .commerce-line-item-views-form th {
+  padding: 0;
+  text-align: center;
 }
-/* line 34, ../sass/theme-A/_not-front.scss */
-#content.not-front .form-wrapper.checkout_review {
-  background-color: transparent;
-}
-/* line 38, ../sass/theme-A/_not-front.scss */
-#content.not-front .checkout-continue {
-  margin-right: 15px;
+/* line 56, ../sass/theme-A/_not-front.scss */
+#content.not-front .views-field-edit-quantity input {
+  padding: 2px 5px;
 }
 
 /* line 3, ../sass/theme-A/_shop-modal.scss */

@@ -12,6 +12,7 @@
     color: white;
 
     tr {
+        font-family: $font-body;
         border: none;
         &.odd {
             background-color: $transDarkGray;
@@ -19,14 +20,11 @@
         &.even {
             background-color: $transGray;
         }
+        th {
+            font-family: $base-font-family;
+        }
         td {
             padding: 10px 20px;
-        }
-    }
-    .commerce-line-item-actions {
-        input {
-            margin-left: 20px;
-            margin-bottom: 10px;
         }
     }
     .form-wrapper {
@@ -34,8 +32,29 @@
         &.checkout_review {
             background-color: transparent;
         }
+        tr {
+            background-color: none;
+        }
     }
     .checkout-continue {
         margin-right: 15px;
+    }
+    .commerce-line-item-actions {
+        background-color: transparent;
+        input {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+    }
+    .commerce-line-item-views-form {
+        th {
+            padding: 0;
+            text-align: center;
+        }
+    }
+    .views-field-edit-quantity {
+        input {
+            padding: 2px 5px;
+        }
     }
 }
