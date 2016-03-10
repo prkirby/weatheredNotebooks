@@ -27,6 +27,9 @@
                 color: $darkGray;
             }
         }
+        .product-desc-modal, .product-note-modal, .product-price-modal {
+            font-family: $font-body;
+        }
         input {
             color: $darkGray;
             border-color: black;

@@ -20,8 +20,13 @@
                 .field-item {
                     // margin-left: 60px;
                     h2 {
-                        font-family: $font-body;
+                        margin: 0;
+                        padding-top: 20px;
+                        font-weight: 300;
                         font-size: 2.5em;
+                    }
+                    p {
+                        font-family: $font-body;
                     }
                 }
             }
