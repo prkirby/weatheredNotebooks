@@ -1810,13 +1810,49 @@ tr.selected td {
 
 /* line 1, ../sass/theme-A/_menu.scss */
 #main-menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
   background-color: #555555;
   z-index: 601;
 }
-/* line 5, ../sass/theme-A/_menu.scss */
+/* line 6, ../sass/theme-A/_menu.scss */
+#main-menu .logo {
+  width: 48px;
+  height: 48px;
+  margin-left: 12px;
+}
+/* line 10, ../sass/theme-A/_menu.scss */
+#main-menu .logo svg {
+  width: 100%;
+  height: 100%;
+  stroke: white;
+  fill: white;
+}
+/* line 15, ../sass/theme-A/_menu.scss */
+#main-menu .logo svg line {
+  stroke: white;
+}
+/* line 18, ../sass/theme-A/_menu.scss */
+#main-menu .logo svg:hover {
+  stroke: black;
+  fill: black;
+}
+/* line 21, ../sass/theme-A/_menu.scss */
+#main-menu .logo svg:hover line {
+  stroke: black;
+}
+/* line 27, ../sass/theme-A/_menu.scss */
 #main-menu ul {
   margin: 0;
-  padding: 12px 0;
+  margin: 12px 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -1828,7 +1864,7 @@ tr.selected td {
   -moz-justify-content: flex-end;
   justify-content: flex-end;
 }
-/* line 10, ../sass/theme-A/_menu.scss */
+/* line 32, ../sass/theme-A/_menu.scss */
 #main-menu ul li {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1837,7 +1873,7 @@ tr.selected td {
   display: flex;
   margin-left: 15px;
 }
-/* line 13, ../sass/theme-A/_menu.scss */
+/* line 35, ../sass/theme-A/_menu.scss */
 #main-menu ul li a {
   color: white;
   text-decoration: none;
@@ -1847,7 +1883,7 @@ tr.selected td {
   font-weight: 300;
 }
 
-/* line 27, ../sass/theme-A/_menu.scss */
+/* line 49, ../sass/theme-A/_menu.scss */
 .fixed {
   position: fixed;
   width: 100%;

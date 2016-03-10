@@ -1,10 +1,32 @@
 #main-menu {
+    @include flexbox;
+    @include justify-content(space-between);
     background-color: $darkGray;
     z-index: 601;
-    // margin-bottom: -48px;
+    .logo {
+        width: 48px;
+        height: 48px;
+        margin-left: 12px;
+        svg{
+            width: 100%;
+            height: 100%;
+            stroke: white;
+            fill: white;
+            line {
+                stroke: white;
+            }
+            &:hover {
+                stroke: black;
+                fill: black;
+                line {
+                    stroke: black;
+                }
+            }
+        }
+    }
     ul {
         margin: 0;
-        padding: 12px 0;
+        margin: 12px 0;
         @include flexbox;
         @include justify-content(flex-end);
         li {

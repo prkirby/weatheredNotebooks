@@ -23,6 +23,14 @@
 
     <?php if ($main_menu): ?>
       <nav id="main-menu" role="navigation" tabindex="-1">
+         <div class="logo">
+             <a href="#">
+                 <?php
+                 $logo=theme_get_setting('logo');
+                 echo file_get_contents($logo);
+                 ?>
+             </a>
+         </div>
         <?php
         // This code snippet is hard to modify. We recommend turning off the
         // "Main menu" on your sub-theme's settings form, deleting this PHP
