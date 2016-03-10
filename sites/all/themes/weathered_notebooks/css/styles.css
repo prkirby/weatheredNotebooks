@@ -2040,7 +2040,7 @@ tr.selected td {
 /* line 8, ../sass/theme-A/_flex-slider.scss */
 #gallery .flex-control-nav {
   bottom: 15px;
-  z-index: 2000;
+  z-index: 500;
 }
 /* line 11, ../sass/theme-A/_flex-slider.scss */
 #gallery .flex-control-nav .flex-active {
