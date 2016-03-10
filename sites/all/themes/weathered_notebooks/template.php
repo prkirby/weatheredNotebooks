@@ -130,3 +130,90 @@ function STARTERKIT_preprocess_block(&$variables, $hook) {
   //}
 }
 // */
+
+
+/**
+ * Implements theme_menu_link().
+ *
+ * This code adds an icon <I> tag for use with icon fonts when a menu item
+ * contains a CSS class that starts with "icon-". You may add CSS classes to
+ * your menu items through the Drupal admin UI with the menu_attributes contrib
+ * module.
+ *
+ * Originally written by lacliniquemtl.
+ * Refactored by jwilson3.
+ * @see http://drupal.org/node/1689728
+ */
+
+ /**
+  * Implements theme_link().
+  *
+  * This code adds an icon <i> tag for use with icon fonts when a menu item
+  * contains a CSS class that starts with "fa-". You may add CSS classes to
+  * your menu items through the Drupal admin UI with the menu_attributes contrib
+  * module.
+  *
+  * Originally written by lacliniquemtl.
+  * Refactored by jwilson3 > mroji28 > driesdelaey > O U T L A W.
+  * @see http://drupal.org/node/1689728
+  */
+
+ function weathered_notebooks_link (array $variables) {
+   $attributes = $variables['options']['attributes'];
+
+   // If there is a CSS class on the link that starts with "fa-", create
+   // additional HTML markup for the icon, and move that specific classname there.
+
+   // Exclusion List for settings eg http://fontawesome.io/examples/
+   $exclusion = array(
+     'fa-lg','fa-2x','fa-3x','fa-4x','fa-5x',
+     'fa-fw',
+     'fa-ul', 'fa-li',
+     'fa-border',
+     'fa-spin',
+     'fa-rotate-90', 'fa-rotate-180','fa-rotate-270','fa-flip-horizontal','fa-flip-vertical',
+     'fa-stack', 'fa-stack-1x', 'fa-stack-2x',
+     'fa-inverse'
+   );
+
+   if (isset($attributes['class'])) {
+     foreach ($attributes['class'] as $key => $class) {
+       if (substr($class, 0, 3) == 'fa-' && !in_array($class,$exclusion)) {
+
+         // We're injecting custom HTML into the link text, so if the original
+         // link text was not set to allow HTML (the usual case for menu items),
+         // we MUST do our own filtering of the original text with check_plain(),
+         // then specify that the link text has HTML content.
+         if (!isset($variables['options']['html']) || empty($variables['options']['html'])) {
+           $variables['text'] = check_plain($variables['text']);
+           $variables['options']['html'] = TRUE;
+         }
+
+         // Add the default-FontAwesome-prefix so we don't need to add it manually in the menu attributes
+         $class = 'fa ' . $class;
+
+         // Create additional HTML markup for the link's icon element and wrap
+         // the link text in a SPAN element, to easily turn it on or off via CSS.
+         $variables['text'] = '<i class="' . $class . '"></i> <span>' . $variables['text'] . '</span>';
+
+         // Finally, remove the icon class from link options, so it is not printed twice.
+         unset($variables['options']['attributes']['class'][$key]);
+       }
+     }
+   }
+
+   return theme_link($variables);
+ }
+
+ function weathered_notebooks_commerce_cart_menu_link_title($vars) {
+
+  $quantity = $vars['quantity'];
+  if ($quantity > 0) {
+    $title = format_plural($quantity, '(1)', '(@count)');
+  } else {
+    $title = 'My basket';
+  }
+
+  return $title;
+}
+?>

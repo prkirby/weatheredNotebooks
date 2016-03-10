@@ -1,0 +1,68 @@
+diff --git a/modules/cart/commerce_cart.module b/modules/cart/commerce_cart.module
+index 944a1b4..cf889c0 100644
+--- a/modules/cart/commerce_cart.module
++++ b/modules/cart/commerce_cart.module
+@@ -70,22 +70,18 @@ function commerce_cart_menu() {
+ function commerce_cart_menu_item_title() {
+   global $user;
+
+-  // Default to a static title.
+-  $title = t('Shopping cart');
+-
++  $quantity = 0;
++
+   // If the user actually has a cart order...
+   if ($order = commerce_cart_order_load($user->uid)) {
+     // Count the number of product line items on the order.
+     $wrapper = entity_metadata_wrapper('commerce_order', $order);
+-    $quantity = commerce_line_items_quantity($wrapper->commerce_line_items, commerce_product_line_item_types());
+-
+-    // If there are more than 0 product line items on the order...
+-    if ($quantity > 0) {
+-      // Use the dynamic menu item title.
+-      $title = format_plural($quantity, 'Shopping cart (1 item)', 'Shopping cart (@count items)');
+-    }
++    $quantity = commerce_line_items_quantity($wrapper->commerce_line_items, commerce_product_line_item_types());
+   }
+
++  // theming the menu link title @see theme_commerce_cart_menu_link_title()
++  $title = theme('commerce_cart_menu_link_title', array('quantity' => $quantity));
++
+   return $title;
+ }
+
+@@ -579,6 +575,9 @@ function commerce_cart_theme() {
+       'path' => drupal_get_path('module', 'commerce_cart') . '/theme',
+       'template' => 'commerce-cart-block',
+     ),
++    'commerce_cart_menu_link_title' => array(
++      'variables' => array('quantity' => NULL),
++    ),
+   );
+ }
+
+@@ -795,6 +794,24 @@ function theme_commerce_cart_empty_page() {
+ }
+
+ /**
++ * Themes the shopping cart menu link title
++ */
++
++function theme_commerce_cart_menu_link_title($vars) {
++
++  // if there are any items in the shopping cart print with the number of items
++  // otherwise return a default label
++  $quantity = $vars['quantity'];
++  if ($quantity > 0) {
++    $title = format_plural($quantity, 'Shopping cart (1 item)', 'Shopping cart (@count items)');
++  } else {
++    $title = 'Shopping cart';
++  }
++
++  return $title;
++}
++
++/**
+  * Loads the shopping cart order for the specified user.
+  *
+  * @param $uid

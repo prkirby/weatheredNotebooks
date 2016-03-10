@@ -1882,8 +1882,12 @@ tr.selected td {
   font-family: "Muli", sans-serif;
   font-weight: 300;
 }
+/* line 45, ../sass/theme-A/_menu.scss */
+#main-menu ul li a:hover {
+  color: black;
+}
 
-/* line 49, ../sass/theme-A/_menu.scss */
+/* line 52, ../sass/theme-A/_menu.scss */
 .fixed {
   position: fixed;
   width: 100%;
