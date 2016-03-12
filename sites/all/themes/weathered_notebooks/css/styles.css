@@ -1928,6 +1928,11 @@ tr.selected td {
   color: white;
   border: 7px solid white;
   border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+/* line 30, ../sass/theme-A/_call-to-action.scss */
+#articlecallaction .call-to-action-btn a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* line 1, ../sass/theme-A/_about.scss */
