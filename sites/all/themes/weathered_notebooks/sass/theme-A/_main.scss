@@ -61,10 +61,13 @@ input.webform-submit {
     }
 }
 a {
-    outline: none;
+    outline: 0;
     color: $lightGray;
     &:hover {
         color: $gray;
+    }
+    &:focus {
+        outline: 0;
     }
 }
 #page {

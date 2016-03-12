@@ -24,7 +24,7 @@
 <?php if ($main_menu): ?>
   <nav id="main-menu" role="navigation" tabindex="-1">
       <div class="logo">
-          <a href="#">
+          <a href="/#articlecallaction">
               <?php
               $logo=theme_get_setting('logo');
               echo file_get_contents($logo);

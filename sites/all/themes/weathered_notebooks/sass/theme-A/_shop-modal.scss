@@ -16,7 +16,7 @@
         @include flexbox;
         @include flex-direction(column);
         @include justify-content(space-between);
-        text-align: center;
+        text-align: left;
         .product-header-modal  {
 
             .product-title-modal {
@@ -34,6 +34,9 @@
             color: $darkGray;
             border-color: black;
             margin: 0 !important;
+        }
+        .commerce-add-to-cart {
+            text-align: center;
         }
         .ui-spinner {
             display: none;

@@ -2068,8 +2068,8 @@ tr.selected td {
 #gallery .flexslider {
   display: block;
   width: 100%;
-  margin-bottom: 60px;
   border: 0;
+  margin: 0;
 }
 /* line 8, ../sass/theme-A/_flex-slider.scss */
 #gallery .flex-control-nav {
@@ -2084,25 +2084,26 @@ tr.selected td {
 /* line 1, ../sass/theme-A/_shop.scss */
 #shop {
   overflow: hidden;
+  padding-top: 60px;
 }
-/* line 3, ../sass/theme-A/_shop.scss */
+/* line 4, ../sass/theme-A/_shop.scss */
 #shop .view-content {
   margin: 0 60px;
   overflow: hidden;
   margin-bottom: 40px;
 }
-/* line 7, ../sass/theme-A/_shop.scss */
+/* line 8, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row {
   float: left;
   position: relative;
   display: block;
 }
-/* line 11, ../sass/theme-A/_shop.scss */
+/* line 12, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row .product-img {
   display: block;
   margin: 0 10px;
 }
-/* line 15, ../sass/theme-A/_shop.scss */
+/* line 16, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row .product-img img {
   display: block;
   position: relative;
@@ -2112,11 +2113,11 @@ tr.selected td {
   -webkit-transition: opacity .3s ease-out;
   -o-transition: opacity .3s ease-out;
 }
-/* line 23, ../sass/theme-A/_shop.scss */
+/* line 24, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row .product-img img:hover {
   opacity: 1;
 }
-/* line 31, ../sass/theme-A/_shop.scss */
+/* line 32, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row .product-info {
   position: absolute;
   bottom: 5%;
@@ -2124,53 +2125,53 @@ tr.selected td {
   text-align: center;
   font-family: "Muli", sans-serif;
 }
-/* line 37, ../sass/theme-A/_shop.scss */
+/* line 38, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row .product-info .product-title {
   margin: 0 0;
   color: #555555;
 }
-/* line 41, ../sass/theme-A/_shop.scss */
+/* line 42, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row .product-info .product-price {
   color: #898989;
 }
-/* line 44, ../sass/theme-A/_shop.scss */
+/* line 45, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row .product-info div {
   display: block;
   margin: auto;
 }
-/* line 50, ../sass/theme-A/_shop.scss */
+/* line 51, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row-1, #shop .view-content .views-row-2 {
   width: 30%;
 }
-/* line 52, ../sass/theme-A/_shop.scss */
+/* line 53, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row-1 .product-title, #shop .view-content .views-row-2 .product-title {
   font-size: 1.8em;
 }
-/* line 56, ../sass/theme-A/_shop.scss */
+/* line 57, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row-3, #shop .view-content .views-row-4 {
   width: 20%;
 }
-/* line 58, ../sass/theme-A/_shop.scss */
+/* line 59, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row-3 .product-title, #shop .view-content .views-row-4 .product-title {
   font-size: 1.2em;
 }
-/* line 62, ../sass/theme-A/_shop.scss */
+/* line 63, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row-5 {
   width: 40%;
   clear: right;
 }
-/* line 65, ../sass/theme-A/_shop.scss */
+/* line 66, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row-5 .product-info {
   text-align: right;
   top: 5%;
   right: 5%;
   bottom: auto;
 }
-/* line 70, ../sass/theme-A/_shop.scss */
+/* line 71, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row-5 .product-info .product-title {
   font-size: 1.2em;
 }
-/* line 74, ../sass/theme-A/_shop.scss */
+/* line 75, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row-5 .product-img {
   display: block;
 }
@@ -2438,7 +2439,7 @@ tr.selected td {
   -webkit-justify-content: space-between;
   -moz-justify-content: space-between;
   justify-content: space-between;
-  text-align: center;
+  text-align: left;
 }
 /* line 22, ../sass/theme-A/_shop-modal.scss */
 .product-modal .product-purchase-modal .product-header-modal .product-title-modal {
@@ -2460,6 +2461,10 @@ tr.selected td {
   margin: 0 !important;
 }
 /* line 38, ../sass/theme-A/_shop-modal.scss */
+.product-modal .product-purchase-modal .commerce-add-to-cart {
+  text-align: center;
+}
+/* line 41, ../sass/theme-A/_shop-modal.scss */
 .product-modal .product-purchase-modal .ui-spinner {
   display: none;
 }
@@ -2568,34 +2573,38 @@ input.webform-submit:hover {
 
 /* line 63, ../sass/theme-A/_main.scss */
 a {
-  outline: none;
+  outline: 0;
   color: #b8b8b8;
 }
 /* line 66, ../sass/theme-A/_main.scss */
 a:hover {
   color: #898989;
 }
+/* line 69, ../sass/theme-A/_main.scss */
+a:focus {
+  outline: 0;
+}
 
-/* line 70, ../sass/theme-A/_main.scss */
+/* line 73, ../sass/theme-A/_main.scss */
 #page {
   max-width: 100%;
 }
-/* line 72, ../sass/theme-A/_main.scss */
+/* line 75, ../sass/theme-A/_main.scss */
 #page .column {
   padding: 0;
 }
 
-/* line 76, ../sass/theme-A/_main.scss */
+/* line 79, ../sass/theme-A/_main.scss */
 #main {
   padding: 0;
 }
 
-/* line 79, ../sass/theme-A/_main.scss */
+/* line 82, ../sass/theme-A/_main.scss */
 .menu-margin-needed {
   margin-top: 48px;
 }
 
-/* line 82, ../sass/theme-A/_main.scss */
+/* line 85, ../sass/theme-A/_main.scss */
 #content.not-front {
   padding: 20px 60px;
 }
