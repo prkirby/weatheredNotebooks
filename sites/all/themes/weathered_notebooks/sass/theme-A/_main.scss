@@ -62,6 +62,10 @@ input.webform-submit {
 }
 a {
     outline: none;
+    color: $lightGray;
+    &:hover {
+        color: $gray;
+    }
 }
 #page {
     max-width: 100%;

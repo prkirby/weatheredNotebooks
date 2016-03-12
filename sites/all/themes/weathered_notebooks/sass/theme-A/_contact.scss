@@ -4,9 +4,10 @@
       rgba(0, 0, 0, 0.4)
     ),
     url("/sites/all/themes/weathered_notebooks/bkg-images/Contact_Backdrop.jpg");
-    background-size: 100% auto;
-    // background-clip: border-box;
-    // background-position: center center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: white;
     padding: 40px 60px;
     margin-top: 60px;
