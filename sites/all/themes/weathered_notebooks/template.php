@@ -211,7 +211,7 @@ function STARTERKIT_preprocess_block(&$variables, $hook) {
   if ($quantity > 0) {
     $title = format_plural($quantity, '(1)', '(@count)');
   } else {
-    $title = 'My basket';
+    $title = '';
   }
 
   return $title;

@@ -1,21 +1,16 @@
 #articlecallaction {
     position: relative;
-    img {
+    img:first-of-type {
         width: 100vw;
-        height: 755px;
+        height: 100%;
         display: block;
     }
-    .quality-slogan {
+    .call-to-action-logo {
         position: absolute;
-        left: 5%;
-        top: 0;
-        font-family: $font-monospace;
-        font-size: 2em;
-        h1 {
-            font-family: $font-body;
-            font-size: 2em;
-            margin: 15px 0;
-        }
+        left: 3%;
+        top: 3%;
+        width: 350px;
+        height: 350px;
     }
     .call-to-action-btn {
         position: absolute;
