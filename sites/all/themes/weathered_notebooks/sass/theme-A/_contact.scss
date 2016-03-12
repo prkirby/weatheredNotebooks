@@ -50,3 +50,33 @@
         }
     }
 }
+@media (max-width: $breakpoint-tablet) {
+    #webformcontact {
+        padding: 30px;
+        h2 {
+            font-size: 2em;
+        }
+    }
+}
+@media (max-width: $breakpoint-mobileLP) {
+    #webformcontact {
+        h2 {
+            font-size: 1.5em;
+        }
+        .webform-client-form {
+            .form-text, .form-textarea {
+                width: 100%;
+            }
+            .webform-component--name {
+                @include zen-grid-item(2, 1);
+            }
+            .webform-component--email {
+                @include zen-clear();
+                @include zen-grid-item(2, 1);
+            }
+            .form-actions input {
+                margin-right: 0;
+            }
+        }
+    }
+}

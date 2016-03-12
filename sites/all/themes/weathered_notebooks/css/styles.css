@@ -1899,6 +1899,16 @@ tr.selected td {
   top: 0;
 }
 
+@media (max-width: 768px) {
+  /* line 60, ../sass/theme-A/_menu.scss */
+  #main-menu ul li {
+    margin-left: 5px;
+  }
+  /* line 62, ../sass/theme-A/_menu.scss */
+  #main-menu ul li a {
+    font-size: 20px;
+  }
+}
 /* line 1, ../sass/theme-A/_call-to-action.scss */
 #articlecallaction {
   position: relative;
@@ -2373,6 +2383,45 @@ tr.selected td {
   margin-right: 5%;
 }
 
+@media (max-width: 768px) {
+  /* line 54, ../sass/theme-A/_contact.scss */
+  #webformcontact {
+    padding: 30px;
+  }
+  /* line 56, ../sass/theme-A/_contact.scss */
+  #webformcontact h2 {
+    font-size: 2em;
+  }
+}
+@media (max-width: 425px) {
+  /* line 63, ../sass/theme-A/_contact.scss */
+  #webformcontact h2 {
+    font-size: 1.5em;
+  }
+  /* line 67, ../sass/theme-A/_contact.scss */
+  #webformcontact .webform-client-form .form-text, #webformcontact .webform-client-form .form-textarea {
+    width: 100%;
+  }
+  /* line 70, ../sass/theme-A/_contact.scss */
+  #webformcontact .webform-client-form .webform-component--name {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+  }
+  /* line 73, ../sass/theme-A/_contact.scss */
+  #webformcontact .webform-client-form .webform-component--email {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+  }
+  /* line 77, ../sass/theme-A/_contact.scss */
+  #webformcontact .webform-client-form .form-actions input {
+    margin-right: 0;
+  }
+}
 /* line 2, ../sass/theme-A/_cart.scss */
 #shoppingcart .single-page {
   margin: 0 60px;
