@@ -2234,7 +2234,7 @@ tr.selected td {
   display: block;
   margin: 0 10px;
 }
-/* line 16, ../sass/theme-A/_shop.scss */
+/* line 15, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row .product-img img {
   display: block;
   position: relative;
@@ -2244,11 +2244,11 @@ tr.selected td {
   -webkit-transition: opacity .3s ease-out;
   -o-transition: opacity .3s ease-out;
 }
-/* line 24, ../sass/theme-A/_shop.scss */
+/* line 23, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row .product-img img:hover {
   opacity: 1;
 }
-/* line 32, ../sass/theme-A/_shop.scss */
+/* line 28, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row .product-info {
   position: absolute;
   bottom: 5%;
@@ -2256,57 +2256,119 @@ tr.selected td {
   text-align: center;
   font-family: "Muli", sans-serif;
 }
-/* line 38, ../sass/theme-A/_shop.scss */
+/* line 34, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row .product-info .product-title {
   margin: 0 0;
   color: #555555;
 }
-/* line 42, ../sass/theme-A/_shop.scss */
+/* line 38, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row .product-info .product-price {
   color: #898989;
 }
-/* line 45, ../sass/theme-A/_shop.scss */
+/* line 41, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row .product-info div {
   display: block;
   margin: auto;
 }
-/* line 51, ../sass/theme-A/_shop.scss */
+/* line 47, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row-1, #shop .view-content .views-row-2 {
   width: 30%;
 }
-/* line 53, ../sass/theme-A/_shop.scss */
+/* line 49, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row-1 .product-title, #shop .view-content .views-row-2 .product-title {
   font-size: 1.8em;
 }
-/* line 57, ../sass/theme-A/_shop.scss */
+/* line 53, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row-3, #shop .view-content .views-row-4 {
   width: 20%;
 }
-/* line 59, ../sass/theme-A/_shop.scss */
+/* line 55, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row-3 .product-title, #shop .view-content .views-row-4 .product-title {
   font-size: 1.2em;
 }
-/* line 63, ../sass/theme-A/_shop.scss */
+/* line 59, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row-5 {
   width: 40%;
   clear: right;
 }
-/* line 66, ../sass/theme-A/_shop.scss */
+/* line 62, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row-5 .product-info {
   text-align: right;
   top: 5%;
   right: 5%;
   bottom: auto;
 }
-/* line 71, ../sass/theme-A/_shop.scss */
+/* line 67, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row-5 .product-info .product-title {
   font-size: 1.2em;
 }
-/* line 75, ../sass/theme-A/_shop.scss */
+/* line 71, ../sass/theme-A/_shop.scss */
 #shop .view-content .views-row-5 .product-img {
   display: block;
 }
 
+@media (max-width: 1024px) {
+  /* line 79, ../sass/theme-A/_shop.scss */
+  #shop .view-content {
+    margin: 0 40px;
+  }
+  /* line 82, ../sass/theme-A/_shop.scss */
+  #shop .view-content .views-row-1 .product-title, #shop .view-content .views-row-2 .product-title {
+    font-size: 1.2em;
+  }
+  /* line 87, ../sass/theme-A/_shop.scss */
+  #shop .view-content .views-row-3 .product-title, #shop .view-content .views-row-4 .product-title {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 768px) {
+  /* line 96, ../sass/theme-A/_shop.scss */
+  #shop .view-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    justify-content: space-around;
+    margin: 0 10px;
+  }
+  /* line 101, ../sass/theme-A/_shop.scss */
+  #shop .view-content .views-row {
+    float: none;
+    width: 40%;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  /* line 106, ../sass/theme-A/_shop.scss */
+  #shop .view-content .views-row .product-img {
+    margin: 0;
+  }
+  /* line 111, ../sass/theme-A/_shop.scss */
+  #shop .view-content .views-row-3 .product-title, #shop .view-content .views-row-4 .product-title {
+    font-size: 1.2em;
+  }
+  /* line 115, ../sass/theme-A/_shop.scss */
+  #shop .view-content .views-row-5 {
+    width: 90%;
+  }
+}
+@media (max-width: 425px) {
+  /* line 123, ../sass/theme-A/_shop.scss */
+  #shop .view-content {
+    margin: 0;
+  }
+  /* line 125, ../sass/theme-A/_shop.scss */
+  #shop .view-content .views-row {
+    width: 80%;
+  }
+}
 /* line 1, ../sass/theme-A/_contact.scss */
 #webformcontact {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/sites/all/themes/weathered_notebooks/bkg-images/Contact_Backdrop.jpg");
