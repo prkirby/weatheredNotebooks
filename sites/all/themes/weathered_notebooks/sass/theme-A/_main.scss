@@ -88,3 +88,14 @@ a {
 #content.not-front {
     padding: 20px 60px;
 }
+@media (max-width: $breakpoint-tablet) {
+    input, textarea, select {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
+@media (max-width: $breakpoint-mobileLP) {
+    input, textarea, select {
+        padding: 5px;
+    }
+}
