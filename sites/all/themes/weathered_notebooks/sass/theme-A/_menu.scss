@@ -29,6 +29,7 @@
         margin: 12px 0;
         @include flexbox;
         @include justify-content(flex-end);
+        @include flex-wrap(wrap);
         li {
             @include flexbox;
             margin-left: 15px;

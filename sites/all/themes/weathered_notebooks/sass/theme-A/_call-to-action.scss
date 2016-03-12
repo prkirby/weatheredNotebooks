@@ -7,8 +7,8 @@
     }
     .call-to-action-logo {
         position: absolute;
-        left: 3%;
-        top: 3%;
+        left: 0;
+        top: 0;
         width: 350px;
         height: 350px;
     }
@@ -31,5 +31,46 @@
             background-color: $semiTransWhite;
         }
     }
-
+}
+@media (max-width: $breakpoint-smallLaptop) {
+    #articlecallaction {
+        .call-to-action-logo {
+            width: 250px;
+            height: 250px;
+        }
+    }
+}
+@media (max-width: $breakpoint-tablet) {
+    #articlecallaction {
+        .call-to-action-logo {
+            width: 150px;
+            height: 150px;
+        }
+        .call-to-action-btn {
+            right: 20%;
+            top: 50%;
+            a {
+                font-size: 1.5em;
+                padding: 10px;
+                border-width: 5px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+@media (max-width: $breakpoint-mobileLP) {
+    #articlecallaction {
+        .call-to-action-logo {
+            width: 100px;
+            height: 100px;
+        }
+        .call-to-action-btn {
+            right: 20%;
+            a {
+                font-size: 1em;
+                padding: 5px;
+                border-width: 3px;
+            }
+        }
+    }
 }

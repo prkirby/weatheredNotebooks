@@ -9,3 +9,11 @@ $transWhite: rgba(255, 255, 255, 0.3);
 $semiTransWhite: rgba(255, 255, 255, 0.5);
 $transGray: rgba(137, 137, 137, 0.4);
 $transDarkGray: rgba(85, 85, 85, 0.4);
+
+
+/*Breakpoints*/
+$breakpoint-smallLaptop: 1024px;
+$breakpoint-tablet: 768px;
+$breakpoint-mobileLP: 425px;
+$breakpoint-mobileMP: 375px;
+$breakpoint-mobileSP: 320px;

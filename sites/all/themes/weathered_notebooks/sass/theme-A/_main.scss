@@ -21,6 +21,9 @@
 @import "shop-modal.scss";
 @import "cart-confirmation.scss";
 
+html {
+    width: 100vw;
+}
 body {
     background-color: $beige;
     padding: 0;

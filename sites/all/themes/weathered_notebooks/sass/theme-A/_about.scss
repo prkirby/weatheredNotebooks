@@ -9,31 +9,50 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
-    .about-us-content {
-        @include zen-grid-container();
-        padding: 40px 60px;
-        .about-us-text {
-            @include zen-grid-item(3, 1);
-            h2 {
-                margin: 0;
-                padding-top: 20px;
-                font-weight: 300;
-                font-size: 2.5em;
-            }
-            p {
-                font-family: $font-body;
-            }
+}
+.about-us-content {
+    padding: 40px 60px;
+    @include flexbox;
+    .about-us-text {
+        width: 65%;
+        padding-right: 20px;
+        h2 {
+            margin: 0;
+            padding-top: 20px;
+            font-weight: 300;
+            font-size: 2.5em;
         }
-        .about-us-img {
-            @include zen-grid-item(2, 4);
-            img {
-                display: block;
-                width: 280px;
-                padding: 40px;
-                margin: auto;
-            }
+        p {
+            font-family: $font-body;
         }
-
+    }
+    .about-us-img {
+        width: 35%;
+        img {
+            display: block;
+            margin: auto;
+            margin: 40px auto;
+        }
     }
 
+}
+@media (max-width: $breakpoint-tablet) {
+
+        .about-us-content {
+            padding: 30px;
+            .about-us-text, .about-us-img {
+                width: 50%;
+            }
+        }
+}
+@media (max-width: 524px) {
+        .about-us-content {
+            @include flex-wrap(wrap);
+            .about-us-text, .about-us-img {
+                width: 100%;
+            }
+            .about-us-text {
+                padding: 0;
+            }
+        }
 }
