@@ -2038,22 +2038,31 @@ tr.selected td {
   .about-us-content .about-us-text, .about-us-content .about-us-img {
     width: 50%;
   }
+  /* line 47, ../sass/theme-A/_about.scss */
+  .about-us-content .about-us-text h2 {
+    font-size: 2em;
+  }
 }
 @media (max-width: 524px) {
-  /* line 49, ../sass/theme-A/_about.scss */
+  /* line 54, ../sass/theme-A/_about.scss */
   .about-us-content {
     -webkit-flex-wrap: wrap;
     -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-  /* line 51, ../sass/theme-A/_about.scss */
+  /* line 56, ../sass/theme-A/_about.scss */
   .about-us-content .about-us-text, .about-us-content .about-us-img {
     width: 100%;
   }
-  /* line 54, ../sass/theme-A/_about.scss */
+  /* line 59, ../sass/theme-A/_about.scss */
   .about-us-content .about-us-text {
     padding: 0;
+  }
+  /* line 61, ../sass/theme-A/_about.scss */
+  .about-us-content .about-us-text h2 {
+    padding-top: 0px;
+    font-size: 1.5em;
   }
 }
 /* line 2, ../sass/theme-A/_video.scss */
@@ -2079,6 +2088,12 @@ tr.selected td {
   height: 100%;
 }
 
+@media (max-width: 768px) {
+  /* line 25, ../sass/theme-A/_video.scss */
+  #videomainvideo .field-item {
+    padding: 30px 5%;
+  }
+}
 /* line 1, ../sass/theme-A/_subscribe.scss */
 #webformsubscribe {
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("/sites/all/themes/weathered_notebooks/bkg-images/Subscribe_Backdrop.jpg");

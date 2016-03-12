@@ -43,6 +43,11 @@
             .about-us-text, .about-us-img {
                 width: 50%;
             }
+            .about-us-text {
+                h2 {
+                    font-size: 2em;
+                }
+            }
         }
 }
 @media (max-width: 524px) {
@@ -53,6 +58,10 @@
             }
             .about-us-text {
                 padding: 0;
+                h2 {
+                    padding-top: 0px;
+                    font-size: 1.5em;
+                }
             }
         }
 }
