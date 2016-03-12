@@ -1799,6 +1799,116 @@ tr.selected td {
 /* Colors */
 /*transparent colors*/
 /*Breakpoints*/
+/* line 1, ../sass/theme-A/_general.scss */
+html {
+  width: 100vw;
+}
+
+/* line 4, ../sass/theme-A/_general.scss */
+body {
+  background-color: #e1d7c3;
+  padding: 0;
+}
+
+/* line 8, ../sass/theme-A/_general.scss */
+input, textarea, select {
+  background-color: transparent;
+  color: white;
+  border: 3px solid white;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  outline: none;
+}
+/* line 16, ../sass/theme-A/_general.scss */
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
+  color: white;
+}
+/* line 19, ../sass/theme-A/_general.scss */
+input:-moz-placeholder, textarea:-moz-placeholder, select:-moz-placeholder {
+  /* Firefox 18- */
+  color: white;
+}
+/* line 22, ../sass/theme-A/_general.scss */
+input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white;
+}
+/* line 25, ../sass/theme-A/_general.scss */
+input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder {
+  color: white;
+}
+/* line 28, ../sass/theme-A/_general.scss */
+input:placeholder-shown, textarea:placeholder-shown, select:placeholder-shown {
+  color: white;
+}
+
+/* line 32, ../sass/theme-A/_general.scss */
+select {
+  width: 350px;
+  font-size: 100%;
+}
+
+/* line 37, ../sass/theme-A/_general.scss */
+input.webform-submit {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+/* line 39, ../sass/theme-A/_general.scss */
+input.webform-submit:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 43, ../sass/theme-A/_general.scss */
+a {
+  outline: 0;
+  color: #b8b8b8;
+}
+/* line 46, ../sass/theme-A/_general.scss */
+a:hover {
+  color: #898989;
+}
+/* line 49, ../sass/theme-A/_general.scss */
+a:focus {
+  outline: 0;
+}
+
+/* line 53, ../sass/theme-A/_general.scss */
+#page {
+  max-width: 100%;
+}
+/* line 55, ../sass/theme-A/_general.scss */
+#page .column {
+  padding: 0;
+}
+
+/* line 59, ../sass/theme-A/_general.scss */
+#main {
+  padding: 0;
+}
+
+/* line 62, ../sass/theme-A/_general.scss */
+.menu-margin-needed {
+  margin-top: 48px;
+}
+
+@media (max-width: 768px) {
+  /* line 66, ../sass/theme-A/_general.scss */
+  input, textarea, select {
+    font-size: 1em;
+    padding: 10px;
+  }
+}
+@media (max-width: 425px) {
+  /* line 72, ../sass/theme-A/_general.scss */
+  input, textarea, select {
+    padding: 5px;
+  }
+}
+/* line 76, ../sass/theme-A/_general.scss */
+fieldset {
+  overflow: auto;
+}
+
 /* line 1, ../sass/theme-A/_single-page.scss */
 .single-page-title {
   display: none;
@@ -2312,17 +2422,21 @@ tr.selected td {
   #shop .view-content {
     margin: 0 40px;
   }
-  /* line 82, ../sass/theme-A/_shop.scss */
+  /* line 81, ../sass/theme-A/_shop.scss */
+  #shop .view-content .views-row .product-img img {
+    opacity: 1;
+  }
+  /* line 85, ../sass/theme-A/_shop.scss */
   #shop .view-content .views-row-1 .product-title, #shop .view-content .views-row-2 .product-title {
     font-size: 1.2em;
   }
-  /* line 87, ../sass/theme-A/_shop.scss */
+  /* line 90, ../sass/theme-A/_shop.scss */
   #shop .view-content .views-row-3 .product-title, #shop .view-content .views-row-4 .product-title {
     font-size: 0.8em;
   }
 }
 @media (max-width: 768px) {
-  /* line 96, ../sass/theme-A/_shop.scss */
+  /* line 99, ../sass/theme-A/_shop.scss */
   #shop .view-content {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2339,32 +2453,32 @@ tr.selected td {
     justify-content: space-around;
     margin: 0 10px;
   }
-  /* line 101, ../sass/theme-A/_shop.scss */
+  /* line 104, ../sass/theme-A/_shop.scss */
   #shop .view-content .views-row {
     float: none;
     width: 40%;
     margin: 0;
     margin-bottom: 30px;
   }
-  /* line 106, ../sass/theme-A/_shop.scss */
+  /* line 109, ../sass/theme-A/_shop.scss */
   #shop .view-content .views-row .product-img {
     margin: 0;
   }
-  /* line 111, ../sass/theme-A/_shop.scss */
+  /* line 114, ../sass/theme-A/_shop.scss */
   #shop .view-content .views-row-3 .product-title, #shop .view-content .views-row-4 .product-title {
     font-size: 1.2em;
   }
-  /* line 115, ../sass/theme-A/_shop.scss */
+  /* line 118, ../sass/theme-A/_shop.scss */
   #shop .view-content .views-row-5 {
     width: 90%;
   }
 }
 @media (max-width: 425px) {
-  /* line 123, ../sass/theme-A/_shop.scss */
+  /* line 126, ../sass/theme-A/_shop.scss */
   #shop .view-content {
     margin: 0;
   }
-  /* line 125, ../sass/theme-A/_shop.scss */
+  /* line 128, ../sass/theme-A/_shop.scss */
   #shop .view-content .views-row {
     width: 80%;
   }
@@ -2565,6 +2679,7 @@ tr.selected td {
 
 /* line 1, ../sass/theme-A/_not-front.scss */
 #content.not-front {
+  padding: 20px 60px;
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("/sites/all/themes/weathered_notebooks/bkg-images/About_Backdrop.jpg");
   background-size: cover;
@@ -2573,66 +2688,104 @@ tr.selected td {
   background-attachment: fixed;
   color: white;
 }
-/* line 14, ../sass/theme-A/_not-front.scss */
+/* line 15, ../sass/theme-A/_not-front.scss */
 #content.not-front tr {
   font-family: "Muli", sans-serif;
   border: none;
 }
-/* line 17, ../sass/theme-A/_not-front.scss */
+/* line 18, ../sass/theme-A/_not-front.scss */
 #content.not-front tr.odd {
   background-color: rgba(85, 85, 85, 0.4);
 }
-/* line 20, ../sass/theme-A/_not-front.scss */
+/* line 21, ../sass/theme-A/_not-front.scss */
 #content.not-front tr.even {
   background-color: rgba(137, 137, 137, 0.4);
 }
-/* line 23, ../sass/theme-A/_not-front.scss */
+/* line 24, ../sass/theme-A/_not-front.scss */
 #content.not-front tr th {
   font-family: "Montserrat", sans-serif;
 }
-/* line 26, ../sass/theme-A/_not-front.scss */
+/* line 27, ../sass/theme-A/_not-front.scss */
 #content.not-front tr td {
   padding: 10px 20px;
 }
-/* line 30, ../sass/theme-A/_not-front.scss */
+/* line 31, ../sass/theme-A/_not-front.scss */
 #content.not-front .form-wrapper {
   background-color: rgba(85, 85, 85, 0.4);
 }
-/* line 32, ../sass/theme-A/_not-front.scss */
+/* line 33, ../sass/theme-A/_not-front.scss */
 #content.not-front .form-wrapper .form-wrapper {
   background-color: transparent;
 }
-/* line 35, ../sass/theme-A/_not-front.scss */
+/* line 36, ../sass/theme-A/_not-front.scss */
 #content.not-front .form-wrapper.checkout_review {
   background-color: transparent;
 }
-/* line 38, ../sass/theme-A/_not-front.scss */
+/* line 39, ../sass/theme-A/_not-front.scss */
 #content.not-front .form-wrapper tr {
   background-color: none;
 }
-/* line 42, ../sass/theme-A/_not-front.scss */
+/* line 43, ../sass/theme-A/_not-front.scss */
 #content.not-front .checkout-continue {
   margin-right: 15px;
 }
-/* line 45, ../sass/theme-A/_not-front.scss */
+/* line 46, ../sass/theme-A/_not-front.scss */
 #content.not-front .commerce-line-item-actions {
   background-color: transparent;
 }
-/* line 47, ../sass/theme-A/_not-front.scss */
+/* line 48, ../sass/theme-A/_not-front.scss */
 #content.not-front .commerce-line-item-actions input {
   margin-left: 20px;
   margin-bottom: 10px;
 }
-/* line 53, ../sass/theme-A/_not-front.scss */
+/* line 54, ../sass/theme-A/_not-front.scss */
 #content.not-front .commerce-line-item-views-form th {
   padding: 0;
   text-align: center;
 }
-/* line 59, ../sass/theme-A/_not-front.scss */
+/* line 60, ../sass/theme-A/_not-front.scss */
 #content.not-front .views-field-edit-quantity input {
   padding: 2px 5px;
 }
+/* line 64, ../sass/theme-A/_not-front.scss */
+#content.not-front input, #content.not-front select {
+  max-width: 80vw;
+}
 
+@media (max-width: 692px) {
+  /* line 69, ../sass/theme-A/_not-front.scss */
+  #content.not-front {
+    padding: 30px;
+  }
+  /* line 71, ../sass/theme-A/_not-front.scss */
+  #content.not-front tr td {
+    padding: 5px;
+  }
+  /* line 74, ../sass/theme-A/_not-front.scss */
+  #content.not-front h1 {
+    font-size: 1.5em;
+  }
+
+  /* line 78, ../sass/theme-A/_not-front.scss */
+  .view {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 532px) {
+  /* line 83, ../sass/theme-A/_not-front.scss */
+  #content.not-front {
+    padding: 5px;
+  }
+  /* line 85, ../sass/theme-A/_not-front.scss */
+  #content.not-front tr td {
+    padding: 5px;
+  }
+
+  /* line 89, ../sass/theme-A/_not-front.scss */
+  .view {
+    font-size: 0.7em;
+  }
+}
 /* line 3, ../sass/theme-A/_shop-modal.scss */
 .product-modal {
   display: -webkit-box;
@@ -2701,6 +2854,25 @@ tr.selected td {
   display: none;
 }
 
+@media (max-width: 768px) {
+  /* line 48, ../sass/theme-A/_shop-modal.scss */
+  .product-modal {
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  /* line 50, ../sass/theme-A/_shop-modal.scss */
+  .product-modal .product-img-modal, .product-modal .product-purchase-modal {
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  /* line 57, ../sass/theme-A/_shop-modal.scss */
+  .product-modal .product-purchase-modal .product-header-modal .product-title-modal {
+    font-size: 1.5em;
+  }
+}
 /* line 2, ../sass/theme-A/_cart-confirmation.scss */
 .messages--commerce-add-to-cart-confirmation .added-product-title {
   color: black !important;
@@ -2749,114 +2921,4 @@ tr.selected td {
   font-family: "Muli", sans-serif;
 }
 
-/* line 24, ../sass/theme-A/_main.scss */
-html {
-  width: 100vw;
-}
-
-/* line 27, ../sass/theme-A/_main.scss */
-body {
-  background-color: #e1d7c3;
-  padding: 0;
-}
-
-/* line 31, ../sass/theme-A/_main.scss */
-input, textarea, select {
-  background-color: transparent;
-  color: white;
-  border: 3px solid white;
-  border-radius: 6px;
-  padding: 10px 20px;
-  font-size: 1.2em;
-  outline: none;
-}
-/* line 39, ../sass/theme-A/_main.scss */
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
-  color: white;
-}
-/* line 42, ../sass/theme-A/_main.scss */
-input:-moz-placeholder, textarea:-moz-placeholder, select:-moz-placeholder {
-  /* Firefox 18- */
-  color: white;
-}
-/* line 45, ../sass/theme-A/_main.scss */
-input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
-  /* Firefox 19+ */
-  color: white;
-}
-/* line 48, ../sass/theme-A/_main.scss */
-input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder {
-  color: white;
-}
-/* line 51, ../sass/theme-A/_main.scss */
-input:placeholder-shown, textarea:placeholder-shown, select:placeholder-shown {
-  color: white;
-}
-
-/* line 55, ../sass/theme-A/_main.scss */
-select {
-  width: 350px;
-  font-size: 100%;
-}
-
-/* line 60, ../sass/theme-A/_main.scss */
-input.webform-submit {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-/* line 62, ../sass/theme-A/_main.scss */
-input.webform-submit:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-/* line 66, ../sass/theme-A/_main.scss */
-a {
-  outline: 0;
-  color: #b8b8b8;
-}
-/* line 69, ../sass/theme-A/_main.scss */
-a:hover {
-  color: #898989;
-}
-/* line 72, ../sass/theme-A/_main.scss */
-a:focus {
-  outline: 0;
-}
-
-/* line 76, ../sass/theme-A/_main.scss */
-#page {
-  max-width: 100%;
-}
-/* line 78, ../sass/theme-A/_main.scss */
-#page .column {
-  padding: 0;
-}
-
-/* line 82, ../sass/theme-A/_main.scss */
-#main {
-  padding: 0;
-}
-
-/* line 85, ../sass/theme-A/_main.scss */
-.menu-margin-needed {
-  margin-top: 48px;
-}
-
-/* line 88, ../sass/theme-A/_main.scss */
-#content.not-front {
-  padding: 20px 60px;
-}
-
-@media (max-width: 768px) {
-  /* line 92, ../sass/theme-A/_main.scss */
-  input, textarea, select {
-    font-size: 1em;
-    padding: 10px;
-  }
-}
-@media (max-width: 425px) {
-  /* line 98, ../sass/theme-A/_main.scss */
-  input, textarea, select {
-    padding: 5px;
-  }
-}
 /* @import "theme-B"; */

@@ -1,0 +1,78 @@
+html {
+    width: 100vw;
+}
+body {
+    background-color: $beige;
+    padding: 0;
+}
+input, textarea, select {
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    outline: none;
+    &::-webkit-input-placeholder {
+        color: white;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+       color: white;
+    }
+    &::-moz-placeholder {  /* Firefox 19+ */
+       color: white;
+    }
+    &:-ms-input-placeholder {
+       color: white;
+    }
+    &:placeholder-shown {
+        color: white;
+    }
+}
+select {
+    width: 350px;
+    font-size: 100%;
+
+}
+input.webform-submit {
+    background-color: $transWhite;
+    &:hover {
+        background-color: $semiTransWhite;
+    }
+}
+a {
+    outline: 0;
+    color: $lightGray;
+    &:hover {
+        color: $gray;
+    }
+    &:focus {
+        outline: 0;
+    }
+}
+#page {
+    max-width: 100%;
+    .column {
+        padding: 0;
+    }
+}
+#main {
+    padding: 0;
+}
+.menu-margin-needed {
+    margin-top: 48px;
+}
+@media (max-width: $breakpoint-tablet) {
+    input, textarea, select {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
+@media (max-width: $breakpoint-mobileLP) {
+    input, textarea, select {
+        padding: 5px;
+    }
+}
+fieldset {
+    overflow: auto;
+}

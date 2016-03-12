@@ -44,3 +44,18 @@
 
     }
 }
+@media (max-width: $breakpoint-tablet) {
+    .product-modal {
+        @include flex-wrap(wrap);
+        .product-img-modal, .product-purchase-modal {
+            width: 100%;
+        }
+    }
+}
+@media (max-width: $breakpoint-mobileLP) {
+    .product-modal {
+        .product-purchase-modal .product-header-modal .product-title-modal {
+            font-size: 1.5em;
+        }
+    }
+}

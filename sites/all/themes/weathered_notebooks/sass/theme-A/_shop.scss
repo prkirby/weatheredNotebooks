@@ -78,6 +78,9 @@
     #shop {
         .view-content {
             margin: 0 40px;
+            .views-row .product-img img {
+                opacity: 1;
+            }
             .views-row-1, .views-row-2{
                 .product-title {
                     font-size: 1.2em;
