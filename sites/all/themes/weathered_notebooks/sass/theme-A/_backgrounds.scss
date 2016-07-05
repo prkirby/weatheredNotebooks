@@ -1,0 +1,68 @@
+#articleaboutus {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("/sites/all/themes/weathered_notebooks/bkg-images/About_Backdrop_Sml.jpg");
+}
+#webformsubscribe {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("/sites/all/themes/weathered_notebooks/bkg-images/Subscribe_Backdrop_Sml.jpg");
+}
+#webformcontact {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("/sites/all/themes/weathered_notebooks/bkg-images/Contact_Backdrop_Sml.jpg");
+}
+#content.notfront {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("/sites/all/themes/weathered_notebooks/bkg-images/About_Backdrop_Sml.jpg");
+}
+@media (min-width: 769px) {
+    #articleaboutus {
+        background: linear-gradient(
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+        ),
+        url("/sites/all/themes/weathered_notebooks/bkg-images/About_Backdrop_Lrg.jpg");
+    }
+    #webformsubscribe {
+        background: linear-gradient(
+          rgba(0, 0, 0, 0.55),
+          rgba(0, 0, 0, 0.55)
+        ),
+        url("/sites/all/themes/weathered_notebooks/bkg-images/Subscribe_Backdrop_Lrg.jpg");
+    }
+    #webformcontact {
+        background: linear-gradient(
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+        ),
+        url("/sites/all/themes/weathered_notebooks/bkg-images/Contact_Backdrop_Lrg.jpg");
+    }
+    #content.notfront {
+        background: linear-gradient(
+          rgba(0, 0, 0, 0.55),
+          rgba(0, 0, 0, 0.55)
+        ),
+        url("/sites/all/themes/weathered_notebooks/bkg-images/About_Backdrop_Lrg.jpg");
+    }
+}
+#articleaboutus, #webformsubscribe, #webformcontact, #content.not-front {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+@media (min-width: 1000px) {
+    #articleaboutus, #webformsubscribe, #webformcontact, #content.not-front {
+        background-attachment: fixed;
+    }
+}

@@ -2125,15 +2125,10 @@ fieldset {
 }
 /* line 1, ../sass/theme-A/_about.scss */
 #articleaboutus {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/sites/all/themes/weathered_notebooks/bkg-images/About_Backdrop.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   color: white;
 }
 
-/* line 13, ../sass/theme-A/_about.scss */
+/* line 4, ../sass/theme-A/_about.scss */
 .about-us-content {
   padding: 40px 60px;
   display: -webkit-box;
@@ -2142,27 +2137,27 @@ fieldset {
   display: -ms-flexbox;
   display: flex;
 }
-/* line 16, ../sass/theme-A/_about.scss */
+/* line 7, ../sass/theme-A/_about.scss */
 .about-us-content .about-us-text {
   width: 65%;
   padding-right: 20px;
 }
-/* line 19, ../sass/theme-A/_about.scss */
+/* line 10, ../sass/theme-A/_about.scss */
 .about-us-content .about-us-text h2 {
   margin: 0;
   padding-top: 20px;
   font-weight: 300;
   font-size: 2.5em;
 }
-/* line 25, ../sass/theme-A/_about.scss */
+/* line 16, ../sass/theme-A/_about.scss */
 .about-us-content .about-us-text p {
   font-family: "Muli", sans-serif;
 }
-/* line 29, ../sass/theme-A/_about.scss */
+/* line 20, ../sass/theme-A/_about.scss */
 .about-us-content .about-us-img {
   width: 35%;
 }
-/* line 31, ../sass/theme-A/_about.scss */
+/* line 22, ../sass/theme-A/_about.scss */
 .about-us-content .about-us-img img {
   display: block;
   margin: auto;
@@ -2170,36 +2165,36 @@ fieldset {
 }
 
 @media (max-width: 768px) {
-  /* line 41, ../sass/theme-A/_about.scss */
+  /* line 32, ../sass/theme-A/_about.scss */
   .about-us-content {
     padding: 30px;
   }
-  /* line 43, ../sass/theme-A/_about.scss */
+  /* line 34, ../sass/theme-A/_about.scss */
   .about-us-content .about-us-text, .about-us-content .about-us-img {
     width: 50%;
   }
-  /* line 47, ../sass/theme-A/_about.scss */
+  /* line 38, ../sass/theme-A/_about.scss */
   .about-us-content .about-us-text h2 {
     font-size: 2em;
   }
 }
 @media (max-width: 524px) {
-  /* line 54, ../sass/theme-A/_about.scss */
+  /* line 45, ../sass/theme-A/_about.scss */
   .about-us-content {
     -webkit-flex-wrap: wrap;
     -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-  /* line 56, ../sass/theme-A/_about.scss */
+  /* line 47, ../sass/theme-A/_about.scss */
   .about-us-content .about-us-text, .about-us-content .about-us-img {
     width: 100%;
   }
-  /* line 59, ../sass/theme-A/_about.scss */
+  /* line 50, ../sass/theme-A/_about.scss */
   .about-us-content .about-us-text {
     padding: 0;
   }
-  /* line 61, ../sass/theme-A/_about.scss */
+  /* line 52, ../sass/theme-A/_about.scss */
   .about-us-content .about-us-text h2 {
     padding-top: 0px;
     font-size: 1.5em;
@@ -2236,18 +2231,13 @@ fieldset {
 }
 /* line 1, ../sass/theme-A/_subscribe.scss */
 #webformsubscribe {
-  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("/sites/all/themes/weathered_notebooks/bkg-images/Subscribe_Backdrop.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   color: white;
 }
-/* line 13, ../sass/theme-A/_subscribe.scss */
+/* line 4, ../sass/theme-A/_subscribe.scss */
 #webformsubscribe .single-page {
   padding: 40px 60px;
 }
-/* line 16, ../sass/theme-A/_subscribe.scss */
+/* line 7, ../sass/theme-A/_subscribe.scss */
 #webformsubscribe .single-page .node-20 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2255,68 +2245,68 @@ fieldset {
   display: -ms-flexbox;
   display: flex;
 }
-/* line 18, ../sass/theme-A/_subscribe.scss */
+/* line 9, ../sass/theme-A/_subscribe.scss */
 #webformsubscribe .single-page .node-20 .field {
   width: 60%;
   padding-right: 5px;
 }
-/* line 22, ../sass/theme-A/_subscribe.scss */
+/* line 13, ../sass/theme-A/_subscribe.scss */
 #webformsubscribe .single-page .node-20 .field .field-item h2 {
   margin: 0;
   padding-top: 20px;
   font-weight: 300;
   font-size: 2.5em;
 }
-/* line 28, ../sass/theme-A/_subscribe.scss */
+/* line 19, ../sass/theme-A/_subscribe.scss */
 #webformsubscribe .single-page .node-20 .field .field-item p {
   font-family: "Muli", sans-serif;
 }
-/* line 33, ../sass/theme-A/_subscribe.scss */
+/* line 24, ../sass/theme-A/_subscribe.scss */
 #webformsubscribe .single-page .node-20 .webform-client-form {
   width: 40%;
   padding-left: 5px;
 }
-/* line 39, ../sass/theme-A/_subscribe.scss */
+/* line 30, ../sass/theme-A/_subscribe.scss */
 #webformsubscribe .webform-submit {
   width: 100%;
 }
 
 @media (max-width: 768px) {
-  /* line 45, ../sass/theme-A/_subscribe.scss */
+  /* line 36, ../sass/theme-A/_subscribe.scss */
   #webformsubscribe .single-page {
     padding: 30px;
   }
-  /* line 48, ../sass/theme-A/_subscribe.scss */
+  /* line 39, ../sass/theme-A/_subscribe.scss */
   #webformsubscribe .single-page .node-20 .field {
     width: 50%;
   }
-  /* line 50, ../sass/theme-A/_subscribe.scss */
+  /* line 41, ../sass/theme-A/_subscribe.scss */
   #webformsubscribe .single-page .node-20 .field .field-item h2 {
     font-size: 2em;
   }
-  /* line 54, ../sass/theme-A/_subscribe.scss */
+  /* line 45, ../sass/theme-A/_subscribe.scss */
   #webformsubscribe .single-page .node-20 .webform-client-form {
     width: 50%;
   }
 }
 @media (max-width: 425px) {
-  /* line 64, ../sass/theme-A/_subscribe.scss */
+  /* line 55, ../sass/theme-A/_subscribe.scss */
   #webformsubscribe .single-page .node-20 {
     -webkit-flex-wrap: wrap;
     -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-  /* line 66, ../sass/theme-A/_subscribe.scss */
+  /* line 57, ../sass/theme-A/_subscribe.scss */
   #webformsubscribe .single-page .node-20 .field {
     width: 100%;
   }
-  /* line 68, ../sass/theme-A/_subscribe.scss */
+  /* line 59, ../sass/theme-A/_subscribe.scss */
   #webformsubscribe .single-page .node-20 .field .field-item h2 {
     font-size: 1.5em;
     padding: 0;
   }
-  /* line 73, ../sass/theme-A/_subscribe.scss */
+  /* line 64, ../sass/theme-A/_subscribe.scss */
   #webformsubscribe .single-page .node-20 .webform-client-form {
     width: 100%;
   }
@@ -2505,16 +2495,11 @@ fieldset {
 }
 /* line 1, ../sass/theme-A/_contact.scss */
 #webformcontact {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/sites/all/themes/weathered_notebooks/bkg-images/Contact_Backdrop.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   color: white;
   padding: 40px 60px;
   margin-top: 60px;
 }
-/* line 14, ../sass/theme-A/_contact.scss */
+/* line 5, ../sass/theme-A/_contact.scss */
 #webformcontact h2 {
   font-size: 2.5em;
   margin-top: 0;
@@ -2529,34 +2514,34 @@ fieldset {
 #webformcontact .webform-client-form:after {
   clear: both;
 }
-/* line 22, ../sass/theme-A/_contact.scss */
+/* line 13, ../sass/theme-A/_contact.scss */
 #webformcontact .webform-client-form .form-text {
   width: 80%;
 }
-/* line 25, ../sass/theme-A/_contact.scss */
+/* line 16, ../sass/theme-A/_contact.scss */
 #webformcontact .webform-client-form .form-textarea {
   width: 90%;
 }
-/* line 28, ../sass/theme-A/_contact.scss */
+/* line 19, ../sass/theme-A/_contact.scss */
 #webformcontact .webform-client-form .form-text, #webformcontact .webform-client-form .form-textarea {
   margin: auto;
   display: block;
 }
-/* line 32, ../sass/theme-A/_contact.scss */
+/* line 23, ../sass/theme-A/_contact.scss */
 #webformcontact .webform-client-form .webform-component--name {
   float: left;
   width: 50%;
   margin-left: 0%;
   margin-right: -50%;
 }
-/* line 35, ../sass/theme-A/_contact.scss */
+/* line 26, ../sass/theme-A/_contact.scss */
 #webformcontact .webform-client-form .webform-component--email {
   float: left;
   width: 50%;
   margin-left: 50%;
   margin-right: -100%;
 }
-/* line 38, ../sass/theme-A/_contact.scss */
+/* line 29, ../sass/theme-A/_contact.scss */
 #webformcontact .webform-client-form .webform-component--message {
   clear: left;
   float: left;
@@ -2564,7 +2549,7 @@ fieldset {
   margin-left: 0%;
   margin-right: -100%;
 }
-/* line 42, ../sass/theme-A/_contact.scss */
+/* line 33, ../sass/theme-A/_contact.scss */
 #webformcontact .webform-client-form .form-actions {
   clear: left;
   float: left;
@@ -2572,7 +2557,7 @@ fieldset {
   margin-left: 0%;
   margin-right: -100%;
 }
-/* line 45, ../sass/theme-A/_contact.scss */
+/* line 36, ../sass/theme-A/_contact.scss */
 #webformcontact .webform-client-form .form-actions input {
   float: right;
   clear: both;
@@ -2580,32 +2565,32 @@ fieldset {
 }
 
 @media (max-width: 768px) {
-  /* line 54, ../sass/theme-A/_contact.scss */
+  /* line 45, ../sass/theme-A/_contact.scss */
   #webformcontact {
     padding: 30px;
   }
-  /* line 56, ../sass/theme-A/_contact.scss */
+  /* line 47, ../sass/theme-A/_contact.scss */
   #webformcontact h2 {
     font-size: 2em;
   }
 }
 @media (max-width: 425px) {
-  /* line 63, ../sass/theme-A/_contact.scss */
+  /* line 54, ../sass/theme-A/_contact.scss */
   #webformcontact h2 {
     font-size: 1.5em;
   }
-  /* line 67, ../sass/theme-A/_contact.scss */
+  /* line 58, ../sass/theme-A/_contact.scss */
   #webformcontact .webform-client-form .form-text, #webformcontact .webform-client-form .form-textarea {
     width: 100%;
   }
-  /* line 70, ../sass/theme-A/_contact.scss */
+  /* line 61, ../sass/theme-A/_contact.scss */
   #webformcontact .webform-client-form .webform-component--name {
     float: left;
     width: 100%;
     margin-left: 0%;
     margin-right: -100%;
   }
-  /* line 73, ../sass/theme-A/_contact.scss */
+  /* line 64, ../sass/theme-A/_contact.scss */
   #webformcontact .webform-client-form .webform-component--email {
     clear: left;
     float: left;
@@ -2613,7 +2598,7 @@ fieldset {
     margin-left: 0%;
     margin-right: -100%;
   }
-  /* line 77, ../sass/theme-A/_contact.scss */
+  /* line 68, ../sass/theme-A/_contact.scss */
   #webformcontact .webform-client-form .form-actions input {
     margin-right: 0;
   }
@@ -2701,107 +2686,102 @@ fieldset {
 #content.not-front {
   padding: 20px 60px;
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("/sites/all/themes/weathered_notebooks/bkg-images/About_Backdrop.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   color: white;
 }
-/* line 15, ../sass/theme-A/_not-front.scss */
+/* line 6, ../sass/theme-A/_not-front.scss */
 #content.not-front tr {
   font-family: "Muli", sans-serif;
   border: none;
 }
-/* line 18, ../sass/theme-A/_not-front.scss */
+/* line 9, ../sass/theme-A/_not-front.scss */
 #content.not-front tr.odd {
   background-color: rgba(85, 85, 85, 0.4);
 }
-/* line 21, ../sass/theme-A/_not-front.scss */
+/* line 12, ../sass/theme-A/_not-front.scss */
 #content.not-front tr.even {
   background-color: rgba(137, 137, 137, 0.4);
 }
-/* line 24, ../sass/theme-A/_not-front.scss */
+/* line 15, ../sass/theme-A/_not-front.scss */
 #content.not-front tr th {
   font-family: "Montserrat", sans-serif;
 }
-/* line 27, ../sass/theme-A/_not-front.scss */
+/* line 18, ../sass/theme-A/_not-front.scss */
 #content.not-front tr td {
   padding: 10px 20px;
 }
-/* line 31, ../sass/theme-A/_not-front.scss */
+/* line 22, ../sass/theme-A/_not-front.scss */
 #content.not-front .form-wrapper {
   background-color: rgba(85, 85, 85, 0.4);
 }
-/* line 33, ../sass/theme-A/_not-front.scss */
+/* line 24, ../sass/theme-A/_not-front.scss */
 #content.not-front .form-wrapper .form-wrapper {
   background-color: transparent;
 }
-/* line 36, ../sass/theme-A/_not-front.scss */
+/* line 27, ../sass/theme-A/_not-front.scss */
 #content.not-front .form-wrapper.checkout_review {
   background-color: transparent;
 }
-/* line 39, ../sass/theme-A/_not-front.scss */
+/* line 30, ../sass/theme-A/_not-front.scss */
 #content.not-front .form-wrapper tr {
   background-color: none;
 }
-/* line 43, ../sass/theme-A/_not-front.scss */
+/* line 34, ../sass/theme-A/_not-front.scss */
 #content.not-front .checkout-continue {
   margin-right: 15px;
 }
-/* line 46, ../sass/theme-A/_not-front.scss */
+/* line 37, ../sass/theme-A/_not-front.scss */
 #content.not-front .commerce-line-item-actions {
   background-color: transparent;
 }
-/* line 48, ../sass/theme-A/_not-front.scss */
+/* line 39, ../sass/theme-A/_not-front.scss */
 #content.not-front .commerce-line-item-actions input {
   margin-left: 20px;
   margin-bottom: 10px;
 }
-/* line 54, ../sass/theme-A/_not-front.scss */
+/* line 45, ../sass/theme-A/_not-front.scss */
 #content.not-front .commerce-line-item-views-form th {
   padding: 0;
   text-align: center;
 }
-/* line 60, ../sass/theme-A/_not-front.scss */
+/* line 51, ../sass/theme-A/_not-front.scss */
 #content.not-front .views-field-edit-quantity input {
   padding: 2px 5px;
 }
-/* line 64, ../sass/theme-A/_not-front.scss */
+/* line 55, ../sass/theme-A/_not-front.scss */
 #content.not-front input, #content.not-front select {
   max-width: 80vw;
 }
 
 @media (max-width: 692px) {
-  /* line 69, ../sass/theme-A/_not-front.scss */
+  /* line 60, ../sass/theme-A/_not-front.scss */
   #content.not-front {
     padding: 30px;
   }
-  /* line 71, ../sass/theme-A/_not-front.scss */
+  /* line 62, ../sass/theme-A/_not-front.scss */
   #content.not-front tr td {
     padding: 5px;
   }
-  /* line 74, ../sass/theme-A/_not-front.scss */
+  /* line 65, ../sass/theme-A/_not-front.scss */
   #content.not-front h1 {
     font-size: 1.5em;
   }
 
-  /* line 78, ../sass/theme-A/_not-front.scss */
+  /* line 69, ../sass/theme-A/_not-front.scss */
   .view {
     font-size: 0.8em;
   }
 }
 @media (max-width: 532px) {
-  /* line 83, ../sass/theme-A/_not-front.scss */
+  /* line 74, ../sass/theme-A/_not-front.scss */
   #content.not-front {
     padding: 5px;
   }
-  /* line 85, ../sass/theme-A/_not-front.scss */
+  /* line 76, ../sass/theme-A/_not-front.scss */
   #content.not-front tr td {
     padding: 5px;
   }
 
-  /* line 89, ../sass/theme-A/_not-front.scss */
+  /* line 80, ../sass/theme-A/_not-front.scss */
   .view {
     font-size: 0.7em;
   }
@@ -2941,4 +2921,58 @@ fieldset {
   font-family: "Muli", sans-serif;
 }
 
+/* line 1, ../sass/theme-A/_backgrounds.scss */
+#articleaboutus {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/sites/all/themes/weathered_notebooks/bkg-images/About_Backdrop_Sml.jpg");
+}
+
+/* line 8, ../sass/theme-A/_backgrounds.scss */
+#webformsubscribe {
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("/sites/all/themes/weathered_notebooks/bkg-images/Subscribe_Backdrop_Sml.jpg");
+}
+
+/* line 15, ../sass/theme-A/_backgrounds.scss */
+#webformcontact {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/sites/all/themes/weathered_notebooks/bkg-images/Contact_Backdrop_Sml.jpg");
+}
+
+/* line 22, ../sass/theme-A/_backgrounds.scss */
+#content.notfront {
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("/sites/all/themes/weathered_notebooks/bkg-images/About_Backdrop_Sml.jpg");
+}
+
+@media (min-width: 769px) {
+  /* line 30, ../sass/theme-A/_backgrounds.scss */
+  #articleaboutus {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/sites/all/themes/weathered_notebooks/bkg-images/About_Backdrop_Lrg.jpg");
+  }
+
+  /* line 37, ../sass/theme-A/_backgrounds.scss */
+  #webformsubscribe {
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("/sites/all/themes/weathered_notebooks/bkg-images/Subscribe_Backdrop_Lrg.jpg");
+  }
+
+  /* line 44, ../sass/theme-A/_backgrounds.scss */
+  #webformcontact {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/sites/all/themes/weathered_notebooks/bkg-images/Contact_Backdrop_Lrg.jpg");
+  }
+
+  /* line 51, ../sass/theme-A/_backgrounds.scss */
+  #content.notfront {
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("/sites/all/themes/weathered_notebooks/bkg-images/About_Backdrop_Lrg.jpg");
+  }
+}
+/* line 59, ../sass/theme-A/_backgrounds.scss */
+#articleaboutus, #webformsubscribe, #webformcontact, #content.not-front {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1000px) {
+  /* line 65, ../sass/theme-A/_backgrounds.scss */
+  #articleaboutus, #webformsubscribe, #webformcontact, #content.not-front {
+    background-attachment: fixed;
+  }
+}
 /* @import "theme-B"; */
